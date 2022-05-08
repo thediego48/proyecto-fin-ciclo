@@ -1,0 +1,177 @@
+@media (max-width:1250px){
+    .footer-1000px{
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+    }
+    .opiniones{
+        display: flex;
+        max-width: 95%;
+        align-items: center;
+    }
+    .contacto-index{
+        max-width: 95%;
+    }
+    .reserva{
+        max-width: 95%;
+    }
+}
+@media (max-width:1000px){
+    .localizaciones{
+        max-width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .centrar-stats{
+        max-width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contenido-banner-contacto{
+        max-width: 90%;
+    }
+    .opiniones{
+        display: flex;
+        max-width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contacto-index{
+        max-width: 95%;
+    }
+    .footer-1000px{
+        max-width: 80%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .imagen-texto{
+        max-width: 100%;
+        flex-direction: column;
+        align-items: center; 
+    }
+    .imagen-texto p{
+        max-width: 50%;
+        height: 100%;
+    }
+    .tabla-servicios{
+        flex-direction: column;
+        align-items: center;
+    }
+    .tabla-servicios-inv{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    .precios-barcos{
+        width: 95%;
+    }
+    .desplegable, .panel{
+        max-width: 95%;
+    }
+    .panel{
+        padding: 0;
+    }
+    .oficina2{
+        max-width: 95%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .texto-info{
+        width: 85%;
+    }
+    .anuncios{
+        max-width: 95%;
+    }
+    .galeria{
+        display: none;
+    }
+    .specs h3{
+        font-size: 0.95em;
+    }
+    
+}
+@media (max-width:871px){
+    .menu,.menu-info{
+        display: none;
+        margin: 0;
+    }
+    .menu li a{
+        font-size: xx-large;
+        color: white;
+        border-bottom: 1px solid rgba(255,255,255,0.5);
+        width: 100%;
+    }
+    .menu .redes a{
+        border: none;
+    }
+    .menu label{
+        font-size: xx-large;
+        padding: 2vh;
+        color: red;
+        border: 2px solid red;
+        font-weight: bold;
+    }
+    .barras-movil{
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 40px;
+    }
+    .barras-movil input{
+        display: none;
+    }
+    .precios-barcos{
+        max-width: 90%;
+    }
+}
+@media (max-width:650px){
+    .imagen-texto p{
+        max-width: 90%;
+    }
+    .imagen-texto img{
+        width: 95%;
+        height: 100%;
+    }
+    .tabla-servicios img,.tabla-eventos img{
+        width: 95%;
+        height: 100%; 
+        margin: auto;
+    }
+    .texto-servicios{
+        max-width: 95%;
+    }
+    .form-doble{
+        flex-direction: column;
+        align-items: center;
+    }
+    .nombre,.email,.embarque,.desembarque{
+        width: 100%;
+    }
+    .texto-info{
+        width: 90%;
+    }
+    .telefono{
+        width: 120px;
+        height: 44;
+    }
+    .mapa-contacto{
+        width: 90%;
+    }
+    .logo{
+        width: 100px;
+        height: 66px;
+    }
+    .imagen img{
+        height: 60%;
+    }
+    .imagen a{
+        height: 50%;
+    }
+    .logo-mapa iframe{
+        max-width: 95%;
+        height: 100%;
+    }
+}

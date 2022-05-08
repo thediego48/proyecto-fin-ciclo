@@ -1,0 +1,28 @@
+.tabla-servicios,.tabla-servicios-inv{
+    max-width: 1000px;
+    color: black;
+    margin: 20px auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.texto-servicios{
+    padding: 30px;
+    max-width: 40%;
+    line-height: 30px;
+    text-align: justify;
+}
+.texto-evento-hijo h2{
+    text-align: center;
+    color: white;
+}
+.texto-evento-hijo p{
+    color: white;
+}
+.tabla-eventos{
+    background-color: #0f75bc;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}

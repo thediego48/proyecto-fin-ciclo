@@ -1,0 +1,35 @@
+.carrousel-info{
+    background-color: #262424;
+    width: 100%;
+    height: 105px;
+    margin: 0;
+}
+.menu-info li a {
+    font-family: Arial;
+    font-size: 22px;
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    }
+.menu-info{
+    padding: 0px;
+    position: absolute;
+    top: 25px;
+    right: 10px;
+}
+
+.menu-info li{
+    display: inline;
+}   
+.texto-info{
+    color: black;
+    width: 70%;
+    margin: 0 auto;
+    text-align: justify;
+    line-height: 1.5;
+    margin-bottom: 50px;
+} 
+.texto-info h1{
+    color:#0F75BC;
+    text-align: center;
+}

@@ -1,0 +1,164 @@
+.precios-barcos{
+  width: 1000px;
+  color: black;
+  margin: 20px auto;
+  margin-top: 30px;
+  text-align: center;
+}
+.precio{
+  background-color: #F8F9FA;
+  color: #0f75bc;
+}
+.celda-info{
+  background-color: #0f75bc;
+  color: white;
+}
+.desplegable {
+  background-color: #eee;
+  color: #25aae1;
+  cursor: pointer;
+  padding: 18px;
+  width: 1000px;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+  transition: 0.4s;
+  margin: 0 auto;
+  font-weight: 600;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+  
+.active, .desplegable:hover {
+    background-color: #ccc;
+}
+.desplegable:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+  
+.active:after {
+  content: "\2212";
+}
+  
+.panel {
+  margin: 0 auto;
+  padding: 0 18px;
+  background-color: #F8F9FA;
+  color: black;
+  width: 965px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.iva{
+  color:black;
+  text-align: right;
+  font-size: 10px;
+}
+h1,p{
+  color:black;
+  text-align:center;
+}
+.anuncios{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.anuncios h2{
+  color:black;
+  text-align:center;
+  padding-top: 30px;
+}
+.anuncios h3{
+  color: black;
+  text-align: center;
+}
+.img-principal{
+  margin: 0 auto;
+  width: 95%;
+}
+.foto-galeria{
+  max-height: 100px;
+}
+.specs{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+}
+.pares{
+  background-color: #0F75BC;
+  color: white;
+}
+.pares h2, .pares .specs h3{
+  color: white;
+}
+.pares .precios-barcos .celda-info{
+  background-color: #27ABE1;
+}
+.modal {
+	display: none;
+}
+.modal:target {
+	display: block;
+	position: fixed;
+	background: rgba(0,0,0,0.8);
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.modal h3 {
+	color: #fff;
+	font-size: 30px;
+	text-align: center;
+	margin: 15px 0;
+}
+.imagen {
+	width: 100%;
+	height: 50%;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.imagen a {
+	color: #fff;
+	font-size: 40px;
+	text-decoration: none;
+	margin: 0 10px;
+}
+.imagen a:nth-child(2) {
+	margin: 0;
+	height: 100%;
+	flex-shrink: 2;
+}
+.imagen img {
+	/*width: 100%;*/
+	height: 100%;
+	max-width: 100%;
+	border: 7px solid #fff;
+	box-sizing: border-box;
+}
+.cerrar {
+	display: block;
+	background: #fff;
+	width: 25px;
+	height: 25px;
+	margin: 15px auto;
+	text-align: center;
+	text-decoration: none;
+	font-size: 25px;
+	color: #000;
+	padding: 5px;
+	border-radius: 50%;
+	line-height: 25px;
+}
+
+
+
+

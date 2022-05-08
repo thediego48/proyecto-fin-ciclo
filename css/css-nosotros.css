@@ -1,0 +1,59 @@
+.quienes-somos{
+  color: black;
+  max-width: 1000px;
+  margin: 20px auto;
+}
+.quienes-somos h2{
+  text-align: center;
+}
+.imagen-texto{
+  display:flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.imagen-texto img{
+  width: 400px;
+  height: 320px;
+}
+.imagen-texto p{
+  max-width: 40%;
+  height: 320px;
+  line-height: 30px;
+  text-align: justify;
+}
+.nuestro-equipo{
+  background-color: #0f75bc;
+  padding: 30px;
+}
+.nuestro-equipo2{
+  margin: 0 auto;
+  max-width: 1000px;
+  display:flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.nuestro-equipo h2{
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+.capitan{
+  background-color: #F8F9FA;
+  width: 320px;
+  height: 500px;
+  margin: 4px;
+}
+.capitan img{
+  display: block;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+.capitan h3{
+  text-align: center;
+  color: #0f75bc;
+}
+.capitan p{
+  text-align: center;
+  color: black;
+  font-weight: bold;
+}

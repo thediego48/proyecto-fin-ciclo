@@ -486,11 +486,12 @@ footer h2{
 .barras-movil{
   display: none;
 }
-.usuarios{
+.banner-logeo{
   background-color: #262424;
   text-align: right;
 }
-.usuarios a{
+.banner-logeo a{
   color: white;
   padding-right: 10px;
+  text-decoration: none;
 }

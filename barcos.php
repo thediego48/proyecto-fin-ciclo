@@ -18,6 +18,7 @@
   session_start();
   if (isset($_SESSION['validado']) && $_SESSION['validado'] == true) {
   ?>
+    <div class="banner-logeo"><a href="">Mi cuenta</a> <a href="login.php?logout=1">Logout </a> </div>  
     <header>
       <img src="fotos/fotos-barcos/portada-banner-compr.jpg" alt="banner" class="banner" />
       <a href="index.php"><img src="fotos/fotos-global/logo.png" width="150px" height="100px" class="logo" /></a>

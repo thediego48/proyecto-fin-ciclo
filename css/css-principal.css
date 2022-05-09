@@ -486,3 +486,11 @@ footer h2{
 .barras-movil{
   display: none;
 }
+.usuarios{
+  background-color: #262424;
+  text-align: right;
+}
+.usuarios a{
+  color: white;
+  padding-right: 10px;
+}

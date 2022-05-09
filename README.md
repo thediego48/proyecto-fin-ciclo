@@ -5,3 +5,4 @@
 - hacer la pagina completamente privada 
 - SI alguien se quiere registrar envia un formulario de solicitar cuenta y se le envia al correo una cuenta (su correo), un contraseña aleatoria y un codigo de cliente
 - que envie correo al usar registro o formulario
+- reseñas con php

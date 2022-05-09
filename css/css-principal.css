@@ -462,6 +462,9 @@ footer h2{
   display: inline-block;
   color: #0080DE;
 }
+.contenido-cookies a:hover{
+  color: #ffffff;
+}
 .div-cookies .button,a{
   margin: 0 auto;
   max-width: 60%;

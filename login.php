@@ -43,7 +43,7 @@
 
     if (isset($_SESSION['validado']) && $_SESSION['validado'] == true) {
 
-        header("location:index.php");
+        header("location:carga.html");
     } else {
     ?>
         <div class="forma-login">

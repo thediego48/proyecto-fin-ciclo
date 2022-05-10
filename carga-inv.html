@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title></title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			background: #ffffff;
+		}
+
+		.container {
+			position: absolute;
+			top: 20%;
+			left: 50%;
+			transform: translate(-50%, +50%) rotateX(70deg);
+		}
+
+		.ripple {
+			position: fixed;
+			top: 0;
+			transform: translateX(-50%);
+			width: 20px;
+			height: 20px;
+			border-radius: 50%;
+			animation: ripple 2s linear infinite;
+		}
+
+		img {
+			position: absolute;
+			top: 14%;
+			left: 47%;
+			z-index: 999;
+		}
+		h2{
+			position: absolute;
+			top: 28%;
+			left: 47%;
+			color: #25aae1;
+		}
+
+		.r2 {
+			animation-delay: 0.4s;
+		}
+
+		.r3 {
+			animation-delay: 0.8s;
+		}
+
+		.r4 {
+			animation-delay: 1.2s;
+		}
+
+		.r5 {
+			animation-delay: 1.6s;
+		}
+
+		.r6 {
+			animation-delay: 2s;
+		}
+
+		@keyframes ripple {
+			from {
+				border: 4px solid #3293c0;
+				background: #0692d3;
+			}
+
+			to {
+				border: 0px solid #3293c0;
+				background: #0692d3;
+				width: 200px;
+				height: 200px;
+				top: 20px;
+				opacity: 0;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<img src="fotos/fotos-global/barco-loading2.png" width="100px" height="100px" />
+	<div class="container">
+		<span class="ripple r1"></span>
+		<span class="ripple r2"></span>
+		<span class="ripple r3"></span>
+		<span class="ripple r4"></span>
+		<span class="ripple r5"></span>
+		<span class="ripple r6"></span>
+	</div>
+	<h2>Bienvenido,<br>
+	cargando...</h2>
+
+	<script>
+		function redireccionarPagina2() {
+			window.location = "login.php";
+		}
+		setTimeout("redireccionarPagina2()", 3000);
+	</script>
+</body>
+
+</html>

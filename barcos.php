@@ -649,10 +649,10 @@
     <section class="llamamos">
       <h2>¿Te llamamos?</h2>
       <p style="color:white;">Déjanos tu teléfono y te llamaremos lo antes posible...</p>
-      <form>
+      <form action="mail/mailtelf.php" method="post">
         <p>
           <input class="telefono" type="tel" name="telefono" placeholder="Teléfono" required />
-          <input type="button" class="button" value="Enviar" onClick="alert('Mensaje enviado, te llamaremos lo antes posible')" />
+          <input type="submit" class="button" value="Enviar" onClick="alert('Mensaje enviado, te llamaremos lo antes posible')" />
         </p>
       </form>
     </section>

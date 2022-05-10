@@ -91,19 +91,19 @@
     <section class="llamamos">
       <h2>¿Te llamamos?</h2>
       <p>Déjanos tu teléfono y te llamaremos lo antes posible...</p>
-      <form>
+      <form action="mail/mailtelf.php" method="post">
         <p>
           <input class="telefono"type="tel" name="telefono" placeholder="Teléfono" required/>
-          <input type="button" class="button"value="Enviar" onClick="alert('Mensaje enviado, te llamaremos lo antes posible')"/>
+          <input type="submit" class="button"value="Enviar" onClick="alert('Mensaje enviado, te llamaremos lo antes posible')"/>
         </p>
       </form>
     </section>
     <section class="contacto-index">
       <h2>O también puedes dejarnos un mensaje</h2>
       <p>Puedes contarnos en este formulario cualquier duda que tengas, nosotros te ayudaremos.</p>
-      <form action="" method="post">
+      <form action="mail/mail.php" method="post">
         <p>
-           <input type="text" class="nombre" name="Nombre" placeholder="Nombre"/>
+           <input type="text" class="nombre" name="nombre" placeholder="Nombre"/>
         </p>
         <p>
            <input type="email" class="email" name="email" placeholder="Correo electrónico"/>
@@ -114,7 +114,7 @@
         <p>
           <input type="checkbox" name="condiciones" required/><label for="condiciones">He leído y acepto la <a href="privacidad.html">política de privacidad</a></label>
         </p>
-        <p><input type="button" class="button"value="Enviar" onClick="alert('Mensaje enviado, te contactaremos lo antes posible')"/></p>
+        <p><input type="submit" class="button"value="Enviar" onClick="alert('Mensaje enviado, te contactaremos lo antes posible')"/></p>
         </form>
     </section>
     <footer>

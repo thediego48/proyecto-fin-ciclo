@@ -53,12 +53,12 @@
         <section class="reserva">
           <h2>Reserva con nosotros con el siguiente formulario</h2>
           <p>O también puedes llamarnos al +34 986 65 52 32</p>
-          <form action="" method="post">
+          <form action="mail/mail-contacto.php" method="post">
             <div class="form-doble">
-                <input type="text" class="nombre" name="Nombre" placeholder="Nombre"/>
+                <input type="text" class="nombre" name="nombre" placeholder="Nombre"/>
                 <input type="email" class="email" name="email" placeholder="Correo electrónico"/>
             </div>
-              <input type="text" class="tlfn" placeholder="Teléfono de contacto"/>
+              <input type="text" class="tlfn" name="telefono"placeholder="Teléfono de contacto"/>
               <select name="barco" class="barco-reserva" placeholder="Modelo de barco deseado">
                 <option hidden selected>Modelo de embarcación deseado</option>
                 <option value="0">-</option>
@@ -86,7 +86,7 @@
             <p>
               <input type="checkbox" name="condiciones" required/><label for="condiciones">He leído y acepto la <a href="privacidad.html">política de privacidad</a></label>
             </p>
-            <p><input type="button" class="button"value="Enviar" onClick="alert('Reserva enviada, te contactaremos lo antes posible para confirmarla.')"/></p>
+            <p><input type="submit" class="button"value="Enviar" onClick="alert('Reserva enviada, te contactaremos lo antes posible para confirmarla.')"/></p>
             </form>
         </section>
         <section class="oficina">

@@ -70,7 +70,7 @@
         <div class="capitan" class="capitan1">
           <img src="fotos/fotos-nosotros/capitan1.jpg" width="200" height="280"/>
           <h3>Alberto Real</h3>
-          <p>Capitan senior</p>
+          <p>Capitán senior</p>
         </div>
         <div class="capitan" class="capitan2">
           <img src="fotos/fotos-nosotros/capitan2.jpg" width="200" height="280"/>
@@ -87,9 +87,9 @@
     <section class="contacto-index">
       <h2>Contáctanos</h2>
       <p>Puedes contarnos en este formulario cualquier duda que tengas, nosotros te ayudaremos.</p>
-      <form action="" method="post">
+      <form action="mail/mail.php" method="post">
         <p>
-           <input type="text" class="nombre" name="Nombre" placeholder="Nombre"/>
+           <input type="text" class="nombre" name="nombre" placeholder="Nombre"/>
         </p>
         <p>
            <input type="email" class="email" name="email" placeholder="Correo electrónico"/>
@@ -100,7 +100,7 @@
         <p>
           <input type="checkbox" name="condiciones" required/><label for="condiciones">He leído y acepto la <a href="privacidad.html">política de privacidad</a></label>
         </p>
-        <p><input type="button" class="button"value="Enviar" onClick="alert('Mensaje enviado, te contactaremos lo antes posible')"/></p>
+        <p><input type="submit" class="button"value="Enviar" onClick="alert('Mensaje enviado, te contactaremos lo antes posible')"/></p>
         </form>
     </section>
     <footer>

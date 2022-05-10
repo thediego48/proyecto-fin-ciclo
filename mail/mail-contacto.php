@@ -40,6 +40,7 @@ try {
         "<br><b>Hora de desembarque: </b>".$_POST["hora-desembarque"] .
         "<br><b>Mensaje: </b>" . $_POST["mensaje"];
 
+    $mail->CharSet = 'UTF-8';    
     $mail->send();
     echo 'El mensaje ha sido enviado correctamente';
 } catch (Exception $e) {

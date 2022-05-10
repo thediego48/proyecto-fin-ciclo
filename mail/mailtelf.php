@@ -29,6 +29,7 @@ try {
     $mail->Subject = 'Solicitud llamada cliente';
     $mail->Body    = "Un cliente ha solicitado una llamada lo antes posible. El teléfono es <b>" .$_POST["telefono"] ."</b>";
 
+    $mail->CharSet = 'UTF-8';
     $mail->send();
     echo 'El mensaje ha sido enviado correctamente';
 } catch (Exception $e) {

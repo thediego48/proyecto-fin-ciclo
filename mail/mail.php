@@ -29,6 +29,7 @@ try {
     $mail->Subject = 'Correo de enviado mediante formulario de contacto';
     $mail->Body    = "<b>Nombre:</b> " .$_POST["nombre"] ."<br><b>Correo electrónico: </b>".$_POST["email"]."<br><b>Mensaje: </b>".$_POST["mensaje"];
 
+    $mail->CharSet = 'UTF-8';
     $mail->send();
     echo 'El mensaje ha sido enviado correctamente';
 } catch (Exception $e) {

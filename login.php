@@ -50,7 +50,7 @@
             <div class="info">
             <a href="index.php"><img src="fotos/fotos-global/logo1.png" width="140px" height="60px"/></a>
             <h2>Real. Yatch. Rental.</h2>
-            <p>La nueva plataforma completamente pivada privada que te permite alquilar el barco perfecto para tus vacaciones, negocio, fiesta...</p>
+            <p>La nueva plataforma completamente privada que te permite alquilar el barco perfecto para tus vacaciones, negocio, fiesta...</p>
             </div>
             <div>
                 <form action="login.php" method="post">

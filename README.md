@@ -9,3 +9,4 @@
 - reseñas con php
 - pantalla de carga tras el login y log out
 - datalist en formulario contacto
+- revisar validacion js en registro

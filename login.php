@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Login</title>
+    <title>Login | Real Yatch Rental</title>
     <link href="css/css-principal.css" rel="stylesheet" type="text/css" media="screen" />
     <link href="css/css-login.css" rel="stylesheet" type="text/css" media="screen" />
     <link href="css/css-mediaQueries.css" rel="stylesheet" type="text/css" media="screen" />
@@ -56,9 +56,13 @@
                 <form action="login.php" method="post">
                     <input type="text" name="usuario" class="nombre" placeholder="Usuario" /><br>
                     <input type="password" name="clave" class="clave"placeholder="Contraseña" /><br>
-                    <input type="submit" class="button" value="Entrar" />
+                    <input type="submit" class="button" value="Entrar" />  
                 </form>
+                <a class="peticion" href="peticion.html">Formulario de petición</a>
             </div>
+        </div>
+        <div class="formulario-reg">
+            <h4>Si no tienes cuenta y quieres optar a una puedes rellenar nuestro <b>formulario de petición</b> que será revisado por nuestros trabajadores y en caso de ser aceptado recibirás un correo electrónico con tus datos de acceso.</h4>
         </div>
 
 

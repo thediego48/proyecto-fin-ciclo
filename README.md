@@ -7,3 +7,4 @@
 - que envie correo al usar registro o formulario
 - para registro, un formulariom y si apreba se puede registrar
 - reseñas con php
+- pantalla de carga tras el login y log out

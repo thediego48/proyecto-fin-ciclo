@@ -2,10 +2,11 @@
 
 -- cosas a hacer --
 - mirar boton cerrar cookies y mirar de usar php en vez de js
-- hacer la pagina completamente privada 
-- SI alguien se quiere registrar envia un formulario de solicitar cuenta y se le envia al correo una cuenta (su correo), un contraseña aleatoria y un codigo de cliente
-- que envie correo al usar registro o formulario
-- para registro, un formulariom y si apreba se puede registrar
+- :heavy_check_mark:hacer la pagina completamente privada 
+- :heavy_check_mark:SI alguien se quiere registrar envia un formulario de solicitar cuenta y se le envia al correo una cuenta (su correo), un contraseña aleatoria y un codigo de cliente
+- :heavy_check_mark:que envie correo al usar registro o formulario
 - reseñas con php
-- pantalla de carga tras el login y log out
+- :heavy_check_mark:pantalla de carga tras el login y log out
 - datalist en formulario contacto
+- revisar validacion js en registro
+- conectar y usar base de datos

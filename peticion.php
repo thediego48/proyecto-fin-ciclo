@@ -1,3 +1,49 @@
+<?php
+include "config.php";
+error_reporting(0);
+
+if(isset($_POST["submit"])){
+    $nombre=$_POST["nombre"];
+    $apellidos=$_POST["apellidos"];
+    $email=$_POST["email"];
+    $telefono=$_POST["telefono"];
+    $contrasena=$_POST["contrasena"];
+    $contrasenac=$_POST["contrasenac"];
+    $dni=$_POST["dni"];
+    $direccion=$_POST["direccion"];
+    $trabajo=$_POST["trabajo"];
+    $ingresos=$_POST["ingresos"];
+
+    if($contrasena==$contrasenac){
+        $sql= "SELECT * FROM  usuarios WHERE email='$email'";
+        $result= mysqli_query($conn,$sql);
+        if(!$result->num_rows >0){
+            $sql= "INSERT INTO usuarios(nombre,apellidos,email,telefono,contrasena,dni,direccion,trabajo,ingresos) VALUES ('$nombre','$apellidos','$email','$telefono','$contrasena','$dni','$direccion','$trabajo','$ingresos')";
+            $result=mysqli_query($conn,$sql);
+
+            if($result){
+                echo "<script>alert('Formulario enviado.')</script>";
+                $nombre="";
+                $apellidos="";
+                $email="";
+                $telefono="";
+                $_POST["contrasena"]="";
+                $_POST["contrasenac"]="";
+                $dni="";
+                $direccion="";
+                $trabajo="";
+                $ingresos="";
+            }else{
+                echo "<script>alert('Hay un error.')</script>";
+            }
+        }else{
+            echo "<script>alert('El correo ya existe.')</script>";
+        }
+    }else{
+        echo "<script>alert('Las contraseñas no coinciden.')</script>";
+    }
+}
+?>
 <!DOCTYPE html>
 <html>
 
@@ -51,39 +97,38 @@
   <div class="texto-registro">
     <h1>Petición de registro en RealYatchRental</h1>
 
-    <form action="mail/mail-form.php" method="post" class="form-registro" if="formm">
+    <form action="" method="post" class="form-registro" id="formm">
       <div class="form-doble">
-        <input type="text" class="nombre" name="nombre" placeholder="Nombre*" required />
-        <input type="text" class="apellidos" name="apellidos" placeholder="Apellidos*" required />
+        <input type="text" class="nombre" name="nombre" placeholder="Nombre*" value="<?php echo $nombre;?>"required />
+        <input type="text" class="apellidos" name="apellidos" placeholder="Apellidos*" value="<?php echo $apellidos;?>"required />
       </div>
       <div class="form-doble">
-        <input type="email" class="email" name="email" placeholder="Correo electrónico*" required />
-        <input type="tel" class="telefonoo" name="telefono" placeholder="Teléfono de contacto*" required />
+        <input type="email" class="email" name="email" placeholder="Correo electrónico*" value="<?php echo $email;?>"required />
+        <input type="tel" class="telefonoo" name="telefono" placeholder="Teléfono de contacto*" value="<?php echo $telefono;?>"required />
       </div>
       <div class="form-doble">
-        <input type="password" class="pass" id="pass1" name="pass1"
-          placeholder="Escribe la contraseña de acceso deseada*" required />
-        <input type="password" class="pass" id="pass2" name="pass2" placeholder="Repite la contraseña*" required />
+        <input type="password" class="pass" id="contrasena" name="contrasena"
+          placeholder="Escribe la contraseña de acceso deseada*" value="<?php echo $_POST['contrasena'];?>"required />
+        <input type="password" class="pass" id="contrasenac" name="contrasenac" placeholder="Repite la contraseña*" value="<?php echo $_POST['contrasenac'];?>"required />
       </div>
 
       <div class="form-doble">
-        <input type="text" class="dni" id="dni" name="dni" placeholder="DNI*" required />
-        <input type="text" class="direccion" name="direccion" placeholder="Dirección" />
+        <input type="text" class="dni" id="dni" name="dni" placeholder="DNI*" value="<?php echo $dni;?>" required />
+        <input type="text" class="direccion" name="direccion" placeholder="Dirección" value="<?php echo $direccion;?>"/>
       </div>
       <div class="form-doble">
-        <input type="text" class="trabajo" name="trabajo" placeholder="Puesto de trabajo actual" />
-        <input type="number" class="ingresos" name="ingresos" placeholder="Ingresos estimados anuales.">
+        <input type="text" class="trabajo" name="trabajo" placeholder="Puesto de trabajo actual" value="<?php echo $trabajo;?>"/>
+        <input type="number" class="ingresos" name="ingresos" placeholder="Ingresos estimados anuales."value="<?php echo $ingresos;?>"/>
       </div>
       <p><textarea class="mensaje" name="quieres"
-          placeholder="¿Por qué quieres pertecener al grupo RealYatchRental?"></textarea></p>
+          placeholder="¿Por qué quieres pertecener al grupo RealYatchRental?" value="<?php echo $_POST['quieres'];?>"></textarea></p>
       <p><textarea class="mensaje" name="puedes"
-          placeholder="¿Por qué crees que puedes pertecener al grupo RealYatchRental?"></textarea></p>
+          placeholder="¿Por qué crees que puedes pertecener al grupo RealYatchRental?" value="<?php echo $_POST['puedes'];?>"></textarea></p>
       <p>
         <input type="checkbox" name="condiciones" required /><label for="condiciones">He leído y acepto la <a
             href="privacidad.html">política de privacidad</a>*</label>
       </p>
-      <p><input type="submit" class="button" value="Enviar" /></p>
-      <div id="errores"></div>
+      <p><input type="submit" name="submit"class="button" value="Enviar" /></p>
     </form>
   </div>
   <footer>

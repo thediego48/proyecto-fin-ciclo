@@ -42,7 +42,7 @@ try {
     $mail->Subject = '¡Has sido aceptado en RealYatchRental!';
     $mail->Body    = "Enhorabuena! Despues de estudiar tu caso, nos complace informarte de que has sido aceptado en RealYatchRental... ¡Qué ganas de que reserves tu primer barco!<br>
     Para iniciar sesión necesitaras tus datos de acceso facilitados en el formulario de registro, por si no los recuerdas son:<br>"
-    ."<br><b>Correo electrónico: </b>".$_POST["email"]."<br><b>Contraseña: </b>".$_POST["pass1"].
+    ."<br><b>Correo electrónico: </b>".$_POST["email"]."<br><b>Contraseña: </b>".$_POST["contrasena"].
     "<br><br>Un saludo, <br>
     El equipo de RealYatchRental.";
 

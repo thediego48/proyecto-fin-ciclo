@@ -14,32 +14,30 @@
 
 <body>
     <?php
+    include "config.php";
     session_start();
+    error_reporting(0);
 
-    $usuarios = array(
-        array("usuario" => "pedro", "clave" => "abc123"),
-        array("usuario" => "maria", "clave" => "abc123"),
-        array("usuario" => "juan", "clave" => "abc123")
-    );
+    if(isset($_POST["submit"])){
+        $email=$_POST["email"];
+        $contrasena=$_POST["contrasena"];
+
+        $sql="SELECT * FROM usuarios WHERE email='$email' AND contrasena='$contrasena'";
+        $result= mysqli_query($conn,$sql);
+
+        if($result->num_rows > 0){
+            $row= mysqli_fetch_assoc($result);
+            $_SESSION['validado']= $row['email'];
+            header("location:carga.html");
+        }else{
+            echo "<script>alert('La contraseña o el email con incorrectos')</script>";
+        }
+    }
 
     if (isset($_GET['logout']) && $_GET['logout'] == 1) {
         unset($_SESSION['validado']);
     }
 
-    function validar_usuario($usuario, $clave)
-    {
-        global $usuarios;
-        foreach ($usuarios as $u) {
-            if ($u['usuario'] == $usuario && $u['clave'] == $clave) {
-                return true;
-            }
-        }
-        return false;
-    }
-
-    if (isset($_POST['usuario'])) {
-        $_SESSION["validado"] = validar_usuario($_POST['usuario'], $_POST['clave']);
-    }
 
     if (isset($_SESSION['validado']) && $_SESSION['validado'] == true) {
 
@@ -54,11 +52,11 @@
             </div>
             <div>
                 <form action="login.php" method="post">
-                    <input type="text" name="usuario" class="nombre" placeholder="Usuario" /><br>
-                    <input type="password" name="clave" class="clave"placeholder="Contraseña" /><br>
-                    <input type="submit" class="button" value="Entrar" />  
+                    <input type="text" name="email" class="nombre" placeholder="Correo electrónico" /><br>
+                    <input type="password" name="contrasena" class="clave"placeholder="Contraseña" /><br>
+                    <input type="submit" name="submit"class="button" value="Entrar" />  
                 </form>
-                <a class="peticion" href="peticion.html">Formulario de petición</a>
+                <a class="peticion" href="peticion.php">Formulario de petición</a>
             </div>
         </div>
         <div class="formulario-reg">

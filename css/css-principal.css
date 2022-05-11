@@ -445,10 +445,13 @@ footer h2{
 .contenido-cookies a:hover{
   color: #ffffff;
 }
-.div-cookies .button,a{
+.div-cookies #boton-cookies{
   margin: 0 auto;
   max-width: 60%;
-
+}
+.div-cookies a{
+  margin: 0 auto;
+  max-width: 60%;
 }
 .tlfn-oculto{
   margin: 0;

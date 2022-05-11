@@ -50,18 +50,19 @@
             <h2>Real. Yatch. Rental.</h2>
             <p>La nueva plataforma completamente privada que te permite alquilar el barco perfecto para tus vacaciones, negocio, fiesta...</p>
             </div>
-            <div>
+            <div id="acceso">
                 <form action="login.php" method="post">
                     <input type="text" name="email" class="nombre" placeholder="Correo electrónico" /><br>
                     <input type="password" name="contrasena" class="clave"placeholder="Contraseña" /><br>
                     <input type="submit" name="submit"class="button" value="Entrar" />  
                 </form>
-                <a class="peticion" href="peticion.php">Formulario de petición</a>
             </div>
         </div>
         <div class="formulario-reg">
-            <h4>Si no tienes cuenta y quieres optar a una puedes rellenar nuestro <b>formulario de petición</b> que será revisado por nuestros trabajadores y en caso de ser aceptado recibirás un correo electrónico con tus datos de acceso.</h4>
+            <h4>Si no tienes cuenta y quieres optar a una puedes rellenar nuestro formulario de <b>petición de registro</b> que será revisado por nuestros trabajadores y en caso de ser aceptado recibirás un correo electrónico con tus datos de acceso.</h4>    
         </div>
+        <div class="bot-reg"><a class="button" id="bot-reg"href="peticion.php">Petición de registro</a></div>
+        
 
 
 
@@ -83,7 +84,7 @@
                 medios sociales, así como para mejorar la usabilidad y temática de la misma con Google Analytics. Los datos
                 personales no son consultados. Si continúas navegando consideramos que aceptas su uso. Puedes obtener más
                 información <a hreflang="es" href="aviso-legal.html">aquí</a></p>
-            <br><button type="button" class="button" onclick="acceptCookies()">
+            <br><button type="button" class="button" id="boton-cookies"onclick="acceptCookies()">
                 Acepto el uso de cookies
             </button>
             <a href="javascript:window.close();">

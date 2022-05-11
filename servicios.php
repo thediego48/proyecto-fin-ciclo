@@ -162,7 +162,7 @@
         medios sociales, así como para mejorar la usabilidad y temática de la misma con Google Analytics. Los datos
         personales no son consultados. Si continúas navegando consideramos que aceptas su uso. Puedes obtener más
         información <a hreflang="es" href="aviso-legal.html">aquí</a></p>
-        <br><button type="button" class="button" onclick="acceptCookies()">
+        <br><button type="button" class="button" id="boton-cookies"onclick="acceptCookies()">
           Acepto el uso de cookies
         </button>
         <a href="javascript:window.close();"><p>No acepto, sácame de aquí</p></a>

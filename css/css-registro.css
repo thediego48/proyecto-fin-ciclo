@@ -28,18 +28,21 @@
     background-color: #F8F9FA;
     margin-bottom: 15px;
 }
-.form-registro textarea{
+
+.form-registro textarea {
     width: 100%;
     border: 2px solid #0f75bc;
     height: 41px;
     background-color: #F8F9FA;
 }
-.form-registro textarea{
+
+.form-registro textarea {
     height: 10em;
     font-family: Arial;
 }
-.form-registro p{
+
+.form-registro p {
     margin-bottom: 30px;
     color: black;
     text-align: center;
-    }
+}

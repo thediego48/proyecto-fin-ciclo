@@ -8,5 +8,5 @@
 - reseñas con php
 - :heavy_check_mark:pantalla de carga tras el login y log out
 - datalist en formulario contacto
-- revisar validacion js en registro
-- conectar y usar base de datos
+- :heavy_check_mark:revisar validacion js en registro
+- :heavy_check_mark:conectar y usar base de datos

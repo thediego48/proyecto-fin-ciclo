@@ -144,29 +144,6 @@
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script>
-    let form = document.getElementById('formm');
-    let pass1 = document.getElementById('pass1');
-    let pass2 = document.getElementById('pass2');
-    let dni = document.getElementById('dni');
-
-    let exp_dni = /^\d{8}\-[a-zA-Z]$/;
-
-
-    form.addEventListener('submit', function (event) {
-
-      if (pass1.value !== pass2.value) {
-        errores.innerHTML += "<p>Las contraseñas no son iguales, revísalas por favor.</p>";
-        pass1.style.borderColor = 'red';
-        pass2.style.borderColor = 'red';
-        event.preventDefault();
-      }
-
-      if (!(exp_dni.test(dni.value))) {
-        errores.innerHTML += "<p>Introduce un DNI válido. Ocho números, un guión y una letra.</p>";
-        dni.style.borderColor = 'red';
-        event.preventDefault();
-      }
-    });
     //script css cookies
     function checkAcceptCookies() {
       if (localStorage.acceptCookies == 'true') {

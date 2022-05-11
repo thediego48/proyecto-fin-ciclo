@@ -8,6 +8,7 @@ require 'SMTP.php';
 
 //Create an instance; passing `true` enables exceptions
 $mail = new PHPMailer(true);
+$mail1 = new PHPMailer(true);
 
 try {
     //Server settings
@@ -20,9 +21,21 @@ try {
     $mail->SMTPSecure = 'tls';            //Enable implicit TLS encryption
     $mail->Port       = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
+    $mail1->SMTPDebug = 0;                      //Enable verbose debug output
+    $mail1->isSMTP();                                            //Send using SMTP
+    $mail1->Host       = 'smtp.gmail.com';                       //Set the SMTP server to send through
+    $mail1->SMTPAuth   = true;                                   //Enable SMTP authentication
+    $mail1->Username   = 'realyatchrental@gmail.com';                     //SMTP username
+    $mail1->Password   = 'realyacthRental123';                               //SMTP password
+    $mail1->SMTPSecure = 'tls';            //Enable implicit TLS encryption
+    $mail1->Port       = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+
     //Recipients
     $mail->setFrom('realyatchrental@gmail.com', 'Real Yatch Rental');
     $mail->addAddress($_POST["email"]);     //Add a recipient
+
+    $mail1->setFrom('realyatchrental@gmail.com', 'Real Yatch Rental');
+    $mail1->addAddress('realyatchrental@gmail.com');     //Add a recipient
 
     //Content
     $mail->isHTML(true);                                  //Set email format to HTML
@@ -32,9 +45,26 @@ try {
     ."<br><b>Correo electrónico: </b>".$_POST["email"]."<br><b>Contraseña: </b>".$_POST["pass1"].
     "<br><br>Un saludo, <br>
     El equipo de RealYatchRental.";
+
+    $mail1->isHTML(true);                                  //Set email format to HTML
+    $mail1->Subject = 'Nueva solicitud de registro';
+    $mail1->Body    = "Un nuevo usuario ha solicitado registrarse en RealYatchRental, los datos de este usuario son:".
+    "<br><b>Nombre:</b> ".$_POST["nombre"].
+    "<br><b>Apellidos:</b> ".$_POST["apellidos"].
+    "<br><b>Email:</b> ".$_POST["email"].
+    "<br><b>Teléfono:</b> ".$_POST["telefono"].
+    "<br><b>DNI:</b> ".$_POST["dni"].
+    "<br><b>Dirección:</b> ".$_POST["direccion"].
+    "<br><b>Puesto de trabajo:</b> ".$_POST["trabajo"].
+    "<br><b>Ingresos anuales:</b> ".$_POST["ingresos"].
+    "<br><b>¿Por qué quieres pertecener al grupo RealYatchRental?:</b> ".$_POST["quieres"].
+    "<br><b>¿Por qué crees que puedes pertecener al grupo RealYatchRental?</b> ".$_POST["puedes"];
     
     $mail->CharSet = 'UTF-8'; 
     $mail->send();
+
+    $mail1->CharSet = 'UTF-8'; 
+    $mail1->send();
     echo 'El mensaje ha sido enviado correctamente';
 } catch (Exception $e) {
     echo "El mensaje no ha podido ser enviado. Error: {$mail->ErrorInfo}";

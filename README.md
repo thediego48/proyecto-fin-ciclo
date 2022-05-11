@@ -11,3 +11,4 @@
 - :heavy_check_mark:revisar validacion js en registro
 - :heavy_check_mark:conectar y usar base de datos
 - envia mail, redirecciona y no mete datos en BBDD
+- añadir "mi cuenta", "hola, usuario", ver todos los datos de cuenta, cambiar contraseña y eliminar cuenta.

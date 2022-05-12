@@ -16,7 +16,7 @@
         session_start();
         if (isset($_SESSION['validado']) && $_SESSION['validado'] == true) {
             ?>
-      <div class="banner-logeo"><a href="">Mi cuenta</a> <a href="login.php?logout=1">Logout </a> </div>      
+      <div class="banner-logeo"><a href="datos-cuenta.php">Mi cuenta</a> <a href="login.php?logout=1">Logout </a> </div>      
       <header>
         <img src="fotos/fotos-nosotros/crew-compr-banner.jpg" alt="banner" class="banner"/>
         <a href="index.php"><img src="fotos/fotos-global/logo.png" width="150px" height="100px" class="logo"/></a>
@@ -31,7 +31,7 @@
             <li><a href="contacto.php">Contacto</a></li>
             <li class="redes"><a href="https://instagram.com"><i class="fab fa-instagram fa-lg"></i></a>
               <a href="https://api.whatsapp.com/send?phone=34986655232&text="><i class="fab fa-whatsapp fa-lg"></i></a>
-              <a href="https://github.com/thediego48/thediego48.github.io"><i class="fab fa-github fa-lg"></i></a>
+              <a href="https://github.com/thediego48/proyecto-fin-ciclo"><i class="fab fa-github fa-lg"></i></a>
             </li>
             <label for="menu-movil" class="menu-movil"><span>CERRAR</span></label>
           </ul>
@@ -46,7 +46,7 @@
           <!--<div class="rrss">
             <a href="https://instagram.com"><i class="fab fa-instagram fa-lg"></i></a>
             <a href="https://api.whatsapp.com/send?phone=34986655232&text="><i class="fab fa-whatsapp fa-lg"></i></a>
-            <a href="https://github.com/thediego48/thediego48.github.io"><i class="fab fa-github fa-lg"></i></a>
+            <a href="https://github.com/thediego48/proyecto-fin-ciclo"><i class="fab fa-github fa-lg"></i></a>
           </div>-->
       </header>
     </div>
@@ -135,7 +135,7 @@
             <li>contacto@realyatchrental.com</li> 
             <a href="https://instagram.com"><i class="fab fa-instagram fa-2x"></i></a>
             <a href="https://api.whatsapp.com/send?phone=34986655232&text="><i class="fab fa-whatsapp fa-2x"></i></a>
-            <a href="https://github.com/thediego48/thediego48.github.io"><i class="fab fa-github fa-2x"></i></a>
+            <a href="https://github.com/thediego48/proyecto-fin-ciclo"><i class="fab fa-github fa-2x"></i></a>
           </ul>
       </div> 
       </section>

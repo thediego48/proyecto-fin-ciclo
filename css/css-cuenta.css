@@ -1,0 +1,77 @@
+.contenido-cuenta h1 {
+    color: #0F75BC;
+    text-align: center;
+}
+
+.contenido-cuenta h4 {
+    color: #000000;
+    text-align: center;
+}
+
+.contenido-cuenta {
+    margin: 20px auto;
+    max-width: 1000px;
+}
+
+.nombre,
+.email,
+.apellidos,
+.telefonoo,
+.dni,
+.direccion,
+.trabajo,
+.ingresos,
+.pass {
+    width: 48%;
+    border: 2px solid #0f75bc;
+    height: 41px;
+    background-color: #F8F9FA;
+    margin-bottom: 15px;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.contenido-cuenta p {
+    text-align: center;
+    color: black;
+}
+
+label {
+    color: black;
+}
+
+.banner-logeo-datos {
+    background-color: #afaaaa;
+    text-align: right;
+}
+
+.banner-logeo-datos a {
+    color: #262424;
+    padding-right: 10px;
+    text-decoration: none;
+}
+
+.menu-datos{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.menu-datos li {
+    display: inline;
+}
+
+.menu-datos li a {
+    font-family: Arial;
+    font-size: 1.275em;
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+}
+
+.menu-datos li a:hover {
+    color: #0f75bc;
+}
+
+.menu-datos .activa-d a {
+    color: #0f75bc;
+}

@@ -65,7 +65,7 @@ try {
 
     $mail1->CharSet = 'UTF-8'; 
     $mail1->send();
-    echo 'El mensaje ha sido enviado correctamente';
+    //echo 'El mensaje ha sido enviado correctamente';
 } catch (Exception $e) {
     echo "El mensaje no ha podido ser enviado. Error: {$mail->ErrorInfo}";
 }

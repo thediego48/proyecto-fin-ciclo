@@ -18,11 +18,15 @@
     <?php
     include "config.php";
     session_start();
+    $mail= $_SESSION['validado'];
+    $sql= "SELECT * FROM usuarios WHERE email='$mail'";
+    $result= mysqli_query($conn,$sql);
+    $nombreIndex= mysqli_fetch_array( $result );
 
     if (isset($_SESSION['validado']) && $_SESSION['validado'] == true) {
     ?>
 
-        <div class="banner-logeo-datos"><a href="">Mi cuenta</a> <a href="login.php?logout=1">Logout </a> </div>
+        <div class="banner-logeo-datos"><p class="bienvenida">Bienvenido, <?php echo $nombreIndex['nombre'] ?> </p><a href="datos-cuenta.php">Mi cuenta</a> <a href="login.php?logout=1">Logout </a> </div>
         <div class="carrousel-info"></div>
         <header>
             <a href="index.php"><img src="fotos/fotos-global/logo.png" width="150px" height="100px" class="logo" /></a>
@@ -68,30 +72,30 @@
                 <h1>Datos de cuenta</h1>
                 <p>
                     <label for="nombre">Nombre</label><br>
-                    <input type="text" class="nombre" name="nombre" value="" disabled><br><br>
+                    <input type="text" id="edit-nombre" class="nombre" name="nombre" value="<?php echo $nombreIndex['nombre'] ?>" disabled><br><br>
 
                     <label for="apellidos">Apellidos</label><br>
-                    <input type="text" class="apellidos" name="apellidos" value="" disabled><br><br>
+                    <input type="text" id="edit-apellidos" class="apellidos" name="apellidos" value="<?php echo $nombreIndex['apellidos'] ?>" disabled><br><br>
 
                     <label for="email">Email</label><br>
-                    <input type="email" class="email" name="email" value="" disabled><br><br>
+                    <input type="email" id="edit-email" class="email" name="email" value="<?php echo $nombreIndex['email'] ?>" disabled><br><br>
 
                     <label for="telefono">Teléfono</label><br>
-                    <input type="tel" class="telefonoo" name="telefono" value="" disabled><br><br>
+                    <input type="tel" id="edit-telefono" class="telefonoo" name="telefono" value="<?php echo $nombreIndex['telefono'] ?>" disabled><br><br>
 
                     <label for="dni">DNI</label><br>
-                    <input type="text" class="dni" name="dni" value="" disabled><br><br>
+                    <input type="text" id="edit-dni" class="dni" name="dni" value="<?php echo $nombreIndex['dni'] ?>" disabled><br><br>
 
                     <label for="direccion">Dirección</label><br>
-                    <input type="text" class="direccion" name="direccion" value="" disabled><br><br>
+                    <input type="text" id="edit-direccion" class="direccion" name="direccion" value="<?php echo $nombreIndex['direccion'] ?>" disabled><br><br>
 
                     <label for="trabajo">Trabajo</label><br>
-                    <input type="text" class="trabajo" name="trabajo" value="" disabled><br><br>
+                    <input type="text" id="edit-trabajo" class="trabajo" name="trabajo" value="<?php echo $nombreIndex['trabajo'] ?>" disabled><br><br>
 
                     <label for="ingresos">Ingresos</label><br>
-                    <input type="number" class="ingresos" name="ingresos" value="" disabled><br><br>
+                    <input type="number" id="edit-ingresos" class="ingresos" name="ingresos" value="<?php echo $nombreIndex['ingresos'] ?>" disabled><br><br>
 
-                    <input type="button" class="button" value="Editar datos">
+                    <input type="button" onclick="enable()" class="button" value="Activar edición">
                     <input type="submit" class="button" value="Actualizar datos">
                 </p>
             </div>
@@ -152,6 +156,18 @@
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script>
+
+            function enable(){
+                document.getElementById("edit-nombre").disabled= false;
+                document.getElementById("edit-apellidos").disabled= false;
+                document.getElementById("edit-email").disabled= false;
+                document.getElementById("edit-telefono").disabled= false;
+                document.getElementById("edit-dni").disabled= false;
+                document.getElementById("edit-direccion").disabled= false;
+                document.getElementById("edit-trabajo").disabled= false;
+                document.getElementById("edit-ingresos").disabled= false;
+            }
+
             //script css cookies
             function checkAcceptCookies() {
                 if (localStorage.acceptCookies == 'true') {} else {

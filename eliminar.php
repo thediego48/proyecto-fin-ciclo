@@ -18,11 +18,15 @@
     <?php
     include "config.php";
     session_start();
+    $mail= $_SESSION['validado'];
+    $sql= "SELECT * FROM usuarios WHERE email='$mail'";
+    $result= mysqli_query($conn,$sql);
+    $nombreIndex= mysqli_fetch_array( $result );
 
     if (isset($_SESSION['validado']) && $_SESSION['validado'] == true) {
     ?>
 
-        <div class="banner-logeo-datos"><a href="">Mi cuenta</a> <a href="login.php?logout=1">Logout </a> </div>
+        <div class="banner-logeo-datos"><p class="bienvenida">Bienvenido, <?php echo $nombreIndex['nombre'] ?> </p><a href="datos-cuenta.php">Mi cuenta</a> <a href="login.php?logout=1">Logout </a> </div>
         <div class="carrousel-info"></div>
         <header>
             <a href="index.php"><img src="fotos/fotos-global/logo.png" width="150px" height="100px" class="logo" /></a>
@@ -72,7 +76,7 @@
                 <p>Si de verdad quieres eliminar tu cuenta nos gustaría darte las gracias por formar parte del equipo RealYatchRental, gracias a ti lo hemos pasado muy bien.</p>
                 <p>Bueno... Dicho todo esto... ¿Estás seguro que quieres irte? Porque te echaríamos tanto de menos...</p>
                 <p>
-                    <a href="">Sí, he de irme...</a>
+                    <a href="">Sí, dame de baja</a>
                     <input type="button" class="button" value="¡No, me quedo!">
                 </p>
             </div>

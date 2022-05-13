@@ -15,10 +15,15 @@
 
 <body>
   <?php
+  include "config.php";
   session_start();
+  $mail = $_SESSION['validado'];
+  $sql = "SELECT * FROM usuarios WHERE email='$mail'";
+  $result = mysqli_query($conn, $sql);
+  $nombreIndex = mysqli_fetch_array($result);
   if (isset($_SESSION['validado']) && $_SESSION['validado'] == true) {
   ?>
-    <div class="banner-logeo"><a href="datos-cuenta.php">Mi cuenta</a> <a href="login.php?logout=1">Logout </a> </div>  
+    <div class="banner-logeo"><p class="bienvenida">Bienvenido, <?php echo $nombreIndex['nombre'] ?> </p><a href="datos-cuenta.php">Mi cuenta</a> <a href="login.php?logout=1">Logout </a> </div>
     <header>
       <img src="fotos/fotos-barcos/portada-banner-compr.jpg" alt="banner" class="banner" />
       <a href="index.php"><img src="fotos/fotos-global/logo.png" width="150px" height="100px" class="logo" /></a>
@@ -649,7 +654,7 @@
     <section class="llamamos">
       <h2>¿Te llamamos?</h2>
       <p style="color:white;">Déjanos tu teléfono y te llamaremos lo antes posible...</p>
-      <form action="mail/mailtelf.php" method="post">
+      <form action="mail/mailtelf-barcos.php" method="post">
         <p>
           <input class="telefono" type="tel" name="telefono" placeholder="Teléfono" required />
           <input type="submit" class="button" value="Enviar" onClick="alert('Mensaje enviado, te llamaremos lo antes posible')" />
@@ -701,10 +706,12 @@
           medios sociales, así como para mejorar la usabilidad y temática de la misma con Google Analytics. Los datos
           personales no son consultados. Si continúas navegando consideramos que aceptas su uso. Puedes obtener más
           información <a hreflang="es" href="aviso-legal.html">aquí</a></p>
-        <br><button type="button" class="button" id="boton-cookies"onclick="acceptCookies()">
+        <br><button type="button" class="button" id="boton-cookies" onclick="acceptCookies()">
           Acepto el uso de cookies
         </button>
-        <a href="javascript:window.close();"><p>No acepto, sácame de aquí</p></a>
+        <a href="javascript:window.close();">
+          <p>No acepto, sácame de aquí</p>
+        </a>
       </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

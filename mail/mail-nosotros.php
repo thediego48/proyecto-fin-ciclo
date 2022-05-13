@@ -31,7 +31,7 @@ try {
 
     $mail->CharSet = 'UTF-8';
     $mail->send();
-    echo 'El mensaje ha sido enviado correctamente';
+    header("location: ../nosotros.php");
 } catch (Exception $e) {
     echo "El mensaje no ha podido ser enviado. Error: {$mail->ErrorInfo}";
 }

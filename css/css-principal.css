@@ -249,10 +249,10 @@ margin: 80px 0;
   font-size: 3em;
 }
 .menu li a:hover{
-  color: #0f75bc;
+  color: white;
 }
 .menu .activa a{
-  color: white;
+  color: #0f75bc;
 }
 .menu .activa-m a{
   color: #25AAE1;
@@ -480,4 +480,11 @@ footer h2{
   color: white;
   padding-right: 10px;
   text-decoration: none;
+}
+.nombre:disabled,.email:disabled, .apellidos:disabled,.tlfn:disabled,.email:disabled,.telefonoo:disabled, .dni:disabled, .direccion:disabled, .trabajo:disabled, .ingresos:disabled {
+  border: 2px solid grey;
+}
+.bienvenida{
+  color: #25aae1;
+  display: inline;
 }

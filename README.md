@@ -15,3 +15,4 @@
 - :heavy_check_mark:poder editar datos en mi cuenta
 - no envia mails con datos post al ser con value
 - poder editar datos, contraseña y eliminar cuenta
+- pantalla de carga con js por encima

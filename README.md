@@ -16,3 +16,4 @@
 - no envia mails con datos post al ser con value
 - poder editar datos, contraseña y eliminar cuenta
 - pantalla de carga con js por encima
+- mejorar pantalla de carga

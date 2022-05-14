@@ -23,7 +23,9 @@
   $nombreIndex = mysqli_fetch_array($result);
   if (isset($_SESSION['validado']) && $_SESSION['validado'] == true) {
   ?>
-    <div class="banner-logeo"><p class="bienvenida">Bienvenido, <?php echo $nombreIndex['nombre'] ?> </p><a href="datos-cuenta.php">Mi cuenta</a> <a href="login.php?logout=1">Logout </a> </div>
+    <div class="banner-logeo">
+      <p class="bienvenida">Bienvenido, <?php echo $nombreIndex['nombre'] ?> </p><a href="datos-cuenta.php">Mi cuenta</a> <a href="login.php?logout=1">Logout </a>
+    </div>
     <header>
       <img src="fotos/fotos-contacto/banner-contacto-compr.jpg" alt="banner" class="banner" />
       <a href="index.php"><img src="fotos/fotos-global/logo.png" width="150px" height="100px" class="logo" /></a>
@@ -62,10 +64,10 @@
       <p>O también puedes llamarnos al +34 986 65 52 32</p>
       <form action="mail/mail-contacto.php" method="post">
         <div class="form-doble">
-          <input type="text" class="nombre" name="nombre" value="<?php echo $nombreIndex['nombre']." ". $nombreIndex['apellidos']?>" readonly />
-          <input type="email" class="email" name="email" value="<?php echo $nombreIndex['email']?>" readonly />
+          <input type="text" class="nombre" name="nombre" value="<?php echo $nombreIndex['nombre'] . " " . $nombreIndex['apellidos'] ?>" readonly />
+          <input type="email" class="email" name="email" value="<?php echo $nombreIndex['email'] ?>" readonly />
         </div>
-        <input type="text" class="tlfn" name="telefono" value="<?php echo $nombreIndex['telefono']?>" readonly />
+        <input type="text" class="tlfn" name="telefono" value="<?php echo $nombreIndex['telefono'] ?>" readonly />
         <select name="barco" class="barco-reserva" placeholder="Modelo de barco deseado">
           <option hidden selected>Modelo de embarcación deseado</option>
           <option value="0">-</option>
@@ -77,12 +79,36 @@
         </select>
         <div class="form-doble">
           <div class="embarque">
-            <input type="text" name="puerto-embarque" class="puerto-embarque" placeholder="Puerto de embarque" />
+            <input type="text" name="puerto-embarque" class="puerto-embarque" list="puertos" placeholder="Puerto de embarque" />
+            <datalist id="puertos">
+              <option value="A Coruña">
+              <option value="Baiona">
+              <option value="Bueu">
+              <option value="Cambados">
+              <option value="O grove">
+              <option value="Ribadeo">
+              <option value="Sada">
+              <option value="Sanxenxo">
+              <option value="Vigo">
+              <option value="Vilagarcía de Arousa">
+            </datalist>
             <input type="text" name="dia-embarque" class="dia-embarque" placeholder="Día de embarque" onfocus="(this.type='date')" onblur="(this.type='text')" />
             <input type="text" name="hora-embarque" placeholder="Hora de embarque" class="hora-embarque" min="08:00" max="19:00" onfocus="(this.type='time')" onblur="(this.type='text')" required />
           </div>
           <div class="desembarque">
-            <input type="text" name="puerto-desembarque" class="puerto-desembarque" placeholder="Puerto de desembarque" />
+            <input type="text" name="puerto-desembarque" class="puerto-desembarque" list="puertos" placeholder="Puerto de desembarque" />
+            <datalist id="puertos">
+              <option value="A Coruña">
+              <option value="Baiona">
+              <option value="Bueu">
+              <option value="Cambados">
+              <option value="O grove">
+              <option value="Ribadeo">
+              <option value="Sada">
+              <option value="Sanxenxo">
+              <option value="Vigo">
+              <option value="Vilagarcía de Arousa">
+            </datalist>
             <input type="text" name="dia-desembarque" placeholder="Día de desembarque" class="dia-desembarque" onfocus="(this.type='date')" onblur="(this.type='text')" />
             <input type="text" name="hora-desembarque" placeholder="Hora de desembarque" class="hora-desembarque" min="08:00" max="19:00" onfocus="(this.type='time')" onblur="(this.type='text')" required />
           </div>

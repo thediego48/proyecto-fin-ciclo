@@ -62,10 +62,10 @@
       <p>O también puedes llamarnos al +34 986 65 52 32</p>
       <form action="mail/mail-contacto.php" method="post">
         <div class="form-doble">
-          <input type="text" class="nombre" name="nombre" value="<?php echo $nombreIndex['nombre']." ". $nombreIndex['apellidos']?>" disabled />
-          <input type="email" class="email" name="email" value="<?php echo $nombreIndex['email']?>" disabled />
+          <input type="text" class="nombre" name="nombre" value="<?php echo $nombreIndex['nombre']." ". $nombreIndex['apellidos']?>" readonly />
+          <input type="email" class="email" name="email" value="<?php echo $nombreIndex['email']?>" readonly />
         </div>
-        <input type="text" class="tlfn" name="telefono" value="<?php echo $nombreIndex['telefono']?>" disabled />
+        <input type="text" class="tlfn" name="telefono" value="<?php echo $nombreIndex['telefono']?>" readonly />
         <select name="barco" class="barco-reserva" placeholder="Modelo de barco deseado">
           <option hidden selected>Modelo de embarcación deseado</option>
           <option value="0">-</option>

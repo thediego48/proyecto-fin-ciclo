@@ -72,28 +72,28 @@
                 <h1>Datos de cuenta</h1>
                 <p>
                     <label for="nombre">Nombre</label><br>
-                    <input type="text" id="edit-nombre" class="nombre" name="nombre" value="<?php echo $nombreIndex['nombre'] ?>" disabled><br><br>
+                    <input type="text" id="edit-nombre" class="nombre" name="nombre" value="<?php echo $nombreIndex['nombre'] ?>" readonly><br><br>
 
                     <label for="apellidos">Apellidos</label><br>
-                    <input type="text" id="edit-apellidos" class="apellidos" name="apellidos" value="<?php echo $nombreIndex['apellidos'] ?>" disabled><br><br>
+                    <input type="text" id="edit-apellidos" class="apellidos" name="apellidos" value="<?php echo $nombreIndex['apellidos'] ?>" readonly><br><br>
 
                     <label for="email">Email</label><br>
-                    <input type="email" id="edit-email" class="email" name="email" value="<?php echo $nombreIndex['email'] ?>" disabled><br><br>
+                    <input type="email" id="edit-email" class="email" name="email" value="<?php echo $nombreIndex['email'] ?>" readonly><br><br>
 
                     <label for="telefono">Teléfono</label><br>
-                    <input type="tel" id="edit-telefono" class="telefonoo" name="telefono" value="<?php echo $nombreIndex['telefono'] ?>" disabled><br><br>
+                    <input type="tel" id="edit-telefono" class="telefonoo" name="telefono" value="<?php echo $nombreIndex['telefono'] ?>" readonly><br><br>
 
                     <label for="dni">DNI</label><br>
-                    <input type="text" id="edit-dni" class="dni" name="dni" value="<?php echo $nombreIndex['dni'] ?>" disabled><br><br>
+                    <input type="text" id="edit-dni" class="dni" name="dni" value="<?php echo $nombreIndex['dni'] ?>" readonly><br><br>
 
                     <label for="direccion">Dirección</label><br>
-                    <input type="text" id="edit-direccion" class="direccion" name="direccion" value="<?php echo $nombreIndex['direccion'] ?>" disabled><br><br>
+                    <input type="text" id="edit-direccion" class="direccion" name="direccion" value="<?php echo $nombreIndex['direccion'] ?>" readonly><br><br>
 
                     <label for="trabajo">Trabajo</label><br>
-                    <input type="text" id="edit-trabajo" class="trabajo" name="trabajo" value="<?php echo $nombreIndex['trabajo'] ?>" disabled><br><br>
+                    <input type="text" id="edit-trabajo" class="trabajo" name="trabajo" value="<?php echo $nombreIndex['trabajo'] ?>" readonly><br><br>
 
                     <label for="ingresos">Ingresos</label><br>
-                    <input type="number" id="edit-ingresos" class="ingresos" name="ingresos" value="<?php echo $nombreIndex['ingresos'] ?>" disabled><br><br>
+                    <input type="number" id="edit-ingresos" class="ingresos" name="ingresos" value="<?php echo $nombreIndex['ingresos'] ?>" readonly><br><br>
 
                     <input type="button" onclick="enable()" class="button" value="Activar edición">
                     <input type="submit" class="button" value="Actualizar datos">
@@ -158,14 +158,14 @@
         <script>
 
             function enable(){
-                document.getElementById("edit-nombre").disabled= false;
-                document.getElementById("edit-apellidos").disabled= false;
-                document.getElementById("edit-email").disabled= false;
-                document.getElementById("edit-telefono").disabled= false;
-                document.getElementById("edit-dni").disabled= false;
-                document.getElementById("edit-direccion").disabled= false;
-                document.getElementById("edit-trabajo").disabled= false;
-                document.getElementById("edit-ingresos").disabled= false;
+                document.getElementById("edit-nombre").readOnly= false;
+                document.getElementById("edit-apellidos").readOnly= false;
+                document.getElementById("edit-email").readOnly= false;
+                document.getElementById("edit-telefono").readOnly= false;
+                document.getElementById("edit-dni").readOnly= false;
+                document.getElementById("edit-direccion").readOnly= false;
+                document.getElementById("edit-trabajo").readOnly= false;
+                document.getElementById("edit-ingresos").readOnly= false;
             }
 
             //script css cookies

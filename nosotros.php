@@ -96,10 +96,10 @@
       <p>Puedes contarnos en este formulario cualquier duda que tengas, nosotros te ayudaremos.</p>
       <form action="mail/mail-nosotros.php" method="post">
         <p>
-          <input type="text" class="nombre" name="nombre" value="<?php echo $nombreIndex['nombre']." ". $nombreIndex['apellidos']?>" disabled />
+          <input type="text" class="nombre" name="nombre" value="<?php echo $nombreIndex['nombre']." ". $nombreIndex['apellidos']?>" readonly />
         </p>
         <p>
-          <input type="email" class="email" name="email" value="<?php echo $nombreIndex['email']?>" disabled />
+          <input type="email" class="email" name="email" value="<?php echo $nombreIndex['email']?>" readonly />
         </p>
         <p>
           <textarea class="mensaje" name="mensaje" placeholder="Tu mensaje"></textarea>

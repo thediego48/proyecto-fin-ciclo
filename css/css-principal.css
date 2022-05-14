@@ -484,6 +484,9 @@ footer h2{
 .nombre:disabled,.email:disabled, .apellidos:disabled,.tlfn:disabled,.email:disabled,.telefonoo:disabled, .dni:disabled, .direccion:disabled, .trabajo:disabled, .ingresos:disabled {
   border: 2px solid grey;
 }
+.nombre:read-only,.email:read-only, .apellidos:read-only,.tlfn:read-only,.email:read-only,.telefonoo:read-only, .dni:read-only, .direccion:read-only, .trabajo:read-only, .ingresos:read-only {
+  border: 2px solid grey;
+}
 .bienvenida{
   color: #25aae1;
   display: inline;

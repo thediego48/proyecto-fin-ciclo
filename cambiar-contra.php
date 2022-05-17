@@ -34,7 +34,8 @@
 
             if ($resultado) {
                 echo "<script>alert('Contraseña cambiada, serás redirigido al login.')</script>";
-                //session_destroy();
+                session_destroy();
+                header("Refresh:0");
                 //header("location: login.php");
                 //exit();
                 $_POST["pass1"] = "";

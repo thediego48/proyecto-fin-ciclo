@@ -76,8 +76,8 @@
                 <p>Si de verdad quieres eliminar tu cuenta nos gustaría darte las gracias por formar parte del equipo RealYatchRental, gracias a ti lo hemos pasado muy bien.</p>
                 <p>Bueno... Dicho todo esto... ¿Estás seguro que quieres irte? Porque te echaríamos tanto de menos...</p>
                 <p>
-                    <a href="">Sí, dame de baja</a>
-                    <input type="button" class="button" value="¡No, me quedo!">
+                    <a href="baja.php" onclick="alert('Te has dado de baja satisfactoriamente')">Sí, dame de baja</a>
+                    <a class="button" href="index.php">¡No, me quedo!</a>
                 </p>
             </div>
         </div>

@@ -19,3 +19,4 @@
 - Cifrar contraseñas
 - mirar boton cerrar cookies y mirar de usar php en vez de js
 - reseñas con php
+- QUITAR EMAILS DEL HOSTING EL ULTIMO DIA

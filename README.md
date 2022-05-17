@@ -20,3 +20,4 @@
 - mirar boton cerrar cookies y mirar de usar php en vez de js
 - reseñas con php
 - QUITAR EMAILS DEL HOSTING EL ULTIMO DIA
+- al modificar datos, que revise que el email no se repite, ahora no funciona

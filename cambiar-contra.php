@@ -18,15 +18,41 @@
     <?php
     include "config.php";
     session_start();
-    $mail= $_SESSION['validado'];
-    $sql= "SELECT * FROM usuarios WHERE email='$mail'";
-    $result= mysqli_query($conn,$sql);
-    $nombreIndex= mysqli_fetch_array( $result );
+    $mail = $_SESSION['validado'];
+    $sql = "SELECT * FROM usuarios WHERE email='$mail'";
+    $result = mysqli_query($conn, $sql);
+    $nombreIndex = mysqli_fetch_array($result);
+    //$_SESSION['id']= $nombreIndex['id'];
+
+    if (isset($_POST["submit"])) {
+        $contrasena = $_POST["pass1"];
+        $contrasenac = $_POST["pass2"];
+
+        if ($contrasena == $contrasenac) {
+            $sql2 = "UPDATE usuarios SET contrasena = '$contrasena' WHERE usuarios.email = '$mail'";
+            $resultado = mysqli_query($conn, $sql2);
+
+            if ($resultado) {
+                echo "<script>alert('Contraseña cambiada, serás redirigido al login.')</script>";
+                //session_destroy();
+                //header("location: login.php");
+                //exit();
+                $_POST["pass1"] = "";
+                $_POST["pass2"] = "";
+            } else {
+                echo "<script>alert('Hay un error.')</script>";
+            }
+        } else {
+            echo "<script>alert('Las contraseñas no coinciden.')</script>";
+        }
+    }
 
     if (isset($_SESSION['validado']) && $_SESSION['validado'] == true) {
     ?>
 
-        <div class="banner-logeo-datos"><p class="bienvenida">Bienvenido, <?php echo $nombreIndex['nombre'] ?> </p><a href="datos-cuenta.php">Mi cuenta</a> <a href="login.php?logout=1">Logout </a> </div>
+        <div class="banner-logeo-datos">
+            <p class="bienvenida">Bienvenido, <?php echo $nombreIndex['nombre'] ?> </p><a href="datos-cuenta.php">Mi cuenta</a> <a href="login.php?logout=1">Logout </a>
+        </div>
         <div class="carrousel-info"></div>
         <header>
             <a href="index.php"><img src="fotos/fotos-global/logo.png" width="150px" height="100px" class="logo" /></a>
@@ -70,15 +96,17 @@
             </nav>
             <div class="contenido-cuenta">
                 <h1>Cambiar contraseña</h1>
-                <p>
-                    <label for="pass1">Nueva contraseña</label><br>
-                    <input type="password" class="nombre" name="pass1" value=""><br><br>
+                <form action="#" method="post">
+                    <p>
+                        <label for="pass1">Nueva contraseña</label><br>
+                        <input type="password" class="nombre" name="pass1" value=""><br><br>
 
-                    <label for="pass2">Repita nueva contraseña</label><br>
-                    <input type="password" class="nombre" name="pass1" value=""><br><br>
+                        <label for="pass2">Repita nueva contraseña</label><br>
+                        <input type="password" class="nombre" name="pass2" value=""><br><br>
 
-                    <input type="submit" class="button" value="Actualizar contraseña">
-                </p>
+                        <input type="submit" name="submit" class="button" value="Actualizar contraseña">
+                    </p>
+                </form>
             </div>
         </div>
 

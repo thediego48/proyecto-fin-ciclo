@@ -18,3 +18,4 @@
 - pantalla de carga con js por encima
 - mejorar pantalla de carga
 - PROBAR TODOS LOS EMAILS
+- Cifrar contraseñas

@@ -7,7 +7,7 @@
 - :heavy_check_mark:que envie correo al usar registro o formulario
 - reseñas con php
 - :heavy_check_mark:pantalla de carga tras el login y log out
-- datalist en formulario contacto
+- :heavy_check_mark:datalist en formulario contacto
 - :heavy_check_mark:revisar validacion js en registro
 - :heavy_check_mark:conectar y usar base de datos
 - :heavy_check_mark:envia mail, redirecciona y no mete datos en BBDD

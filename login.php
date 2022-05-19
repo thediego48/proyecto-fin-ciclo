@@ -17,6 +17,7 @@
     include "config.php";
     session_start();
     error_reporting(0);
+    //$passVerify= password_verify($contrasena, $passHash1);
 
     if(isset($_POST["submit"])){
         $email=$_POST["email"];

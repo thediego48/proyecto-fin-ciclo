@@ -14,6 +14,8 @@ if (isset($_POST["submit"])) {
   $trabajo = $_POST["trabajo"];
   $ingresos = $_POST["ingresos"];
 
+  //$passHash1 = password_hash($contrasena, PASSWORD_BCRYPT);
+
   if ($contrasena == $contrasenac) {
     $sql = "SELECT * FROM  usuarios WHERE email='$email'";
     $result = mysqli_query($conn, $sql);

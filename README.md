@@ -21,3 +21,5 @@
 - reseñas con php
 - QUITAR EMAILS DEL HOSTING EL ULTIMO DIA
 - al modificar datos, que revise que el email no se repite, ahora no funciona
+- Modo móvil
+- Mejorar menú desplegable

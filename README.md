@@ -13,8 +13,7 @@
 - :heavy_check_mark:poder editar datos en mi cuenta
 - :heavy_check_mark:no envia mails con datos post al ser con value
 - :heavy_check_mark:poder editar datos, contraseña y eliminar cuenta
-- pantalla de carga con js por encima
-- mejorar pantalla de carga
+- :heavy_check_mark:mejorar pantalla de carga
 - :heavy_check_mark:PROBAR TODOS LOS EMAILS
 - Cifrar contraseñas
 - :heavy_check_mark:mirar boton cerrar cookies y mirar de usar php en vez de js

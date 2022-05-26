@@ -524,6 +524,7 @@ iframe {
   padding: 4rem;
   font-size: 1.3rem;
   text-align: justify;
+  border-radius: 15px;
 }
 
 .contenido-cookies a {

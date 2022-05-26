@@ -15,9 +15,9 @@
 - :heavy_check_mark:poder editar datos, contraseña y eliminar cuenta
 - pantalla de carga con js por encima
 - mejorar pantalla de carga
-- PROBAR TODOS LOS EMAILS
+- :heavy_check_mark:PROBAR TODOS LOS EMAILS
 - Cifrar contraseñas
-- mirar boton cerrar cookies y mirar de usar php en vez de js
+- :heavy_check_mark:mirar boton cerrar cookies y mirar de usar php en vez de js
 - reseñas con php
 - QUITAR EMAILS DEL HOSTING EL ULTIMO DIA
 - al modificar datos, que revise que el email no se repite, ahora no funciona

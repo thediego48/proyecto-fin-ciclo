@@ -22,3 +22,4 @@
 - al modificar datos, que revise que el email no se repite, ahora no funciona
 - Modo móvil 
 - Mejorar menú desplegable
+- Correos electrónicos para cambio de datos, cambio de contraseña y eliminacion de cuenta

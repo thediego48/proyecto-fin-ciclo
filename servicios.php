@@ -54,7 +54,7 @@
         <li><a href="#" class="menu-hover"><i class="fas fa-regular fa-user"></i></a>
         <ul class="submenu-escr">
           <li><a href="datos-cuenta.php">Mi cuenta</a></li>
-          <li><a href="login.php?logout=1"><i class="fas fa-solid fa-power-off"></i></a></li>
+          <li><a href="carga-inv.html"><i class="fas fa-solid fa-power-off"></i></a></li>
         </ul>
         </li>
         </div>

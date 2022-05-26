@@ -202,9 +202,7 @@
                 <br><button type="button" class="button" id="boton-cookies" onclick="acceptCookies()">
                     Acepto el uso de cookies
                 </button>
-                <a href="javascript:window.close();">
-                    <p>No acepto, sácame de aquí</p>
-                </a>
+                
             </div>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

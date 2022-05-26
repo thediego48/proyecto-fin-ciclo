@@ -52,7 +52,7 @@
     ?>
 
         <div class="banner-logeo-datos">
-            <p class="bienvenida">Bienvenido, <?php echo $nombreIndex['nombre'] ?> </p><a href="datos-cuenta.php">Mi cuenta</a> <a href="login.php?logout=1">Logout </a>
+            <p class="bienvenida">Bienvenido, <?php echo $nombreIndex['nombre'] ?> </p>
         </div>
         <div class="carrousel-info"></div>
         <header>
@@ -79,6 +79,14 @@
                 <li><a href="servicios.php">Servicios</a></li>
                 <li><a href="barcos.php">Barcos</a></li>
                 <li><a href="contacto.php">Contacto</a></li>
+                <div class="menu-hover" style="display: inline;">
+                    <li><a href="#" class="menu-hover"><i class="fas fa-regular fa-user"></i></a>
+                        <ul class="submenu-escr">
+                            <li><a href="datos-cuenta.php">Mi cuenta</a></li><br>
+                            <li><a href="login.php?logout=1"><i class="fas fa-solid fa-power-off"></i></a></li>
+                        </ul>
+                    </li>
+                </div>
             </ul>
             <!--<div class="rrss">
             <a href="https://instagram.com"><i class="fab fa-instagram fa-lg"></i></a>

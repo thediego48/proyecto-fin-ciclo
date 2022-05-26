@@ -2,30 +2,54 @@
   width: 100vw;
   overflow: -x hidden;
 }*/
-body{
+body {
   margin: 0;
   font-family: Arial;
   font-size: 1.125em;
   text-decoration: none;
   color: #fff;
 }
-.menu{
+
+.menu {
   padding: 0px;
   position: absolute;
   top: 25px;
   right: 10px;
 }
-.menu li{
+
+.menu li {
   display: inline;
 }
+
 .menu li a {
- font-family: Arial;
- font-size: 1.275em;
- text-decoration: none;
- color: black;
- padding: 20px;
- }
-.rrss a{
+  font-family: Arial;
+  font-size: 1.275em;
+  text-decoration: none;
+  color: black;
+  padding: 20px;
+}
+
+.submenu-escr {
+  text-align: center;
+  background-color: black;
+  padding-inline-start: 0;
+  width: 150px;
+  position: absolute;
+  top: 30px;
+  right: 0px;
+  display: none;
+}
+
+.submenu-escr li a{
+  color: white;
+  padding: 0;
+}
+
+.menu-hover:hover .submenu-escr{
+  display: block;
+}
+
+.rrss a {
   color: black;
   position: absolute;
   top: 2px;
@@ -33,21 +57,25 @@ body{
   width: 90px;
   height: 40px;
 }
-header .banner{
+
+header .banner {
   width: 100%;
   height: 100%;
   background-color: #0F75BC;
 }
-header{
+
+header {
   background-color: #0F75BC;
 }
-.logo{
+
+.logo {
   position: absolute;
   top: 5px;
   left: 10px;
   z-index: 5;
 }
-.button{
+
+.button {
   text-decoration: none;
   padding: 10px;
   font-weight: 600;
@@ -58,11 +86,13 @@ header{
   border: 2px solid white;
   cursor: pointer
 }
-.button:hover{
+
+.button:hover {
   color: #1883ba;
   background-color: #ffffff;
   border: 2px solid #25aae1;
 }
+
 /*input,select{
   display: block;
   background:grey;
@@ -87,319 +117,375 @@ label{
   letter-spacing: .2em;
   margin: 20px 20px 5px 20px;
 }*/
-.Vigo{
+.Vigo {
   background-image: url(../fotos/fotos-index/ria-vigo.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
   height: 200px;
   width: 320px;
-  margin:4px;
+  margin: 4px;
 }
-.Vigo h1{
+
+.Vigo h1 {
   visibility: hidden;
 }
-.Vigo:hover{
-  background-image: 
-  linear-gradient(
-    rgba(41, 48, 43, 0.6),
-    rgba(41, 48, 43, 0.6)
-  ),
-  url(../fotos/fotos-index/ria-vigo.jpg);
+
+.Vigo:hover {
+  background-image:
+    linear-gradient(rgba(41, 48, 43, 0.6),
+      rgba(41, 48, 43, 0.6)),
+    url(../fotos/fotos-index/ria-vigo.jpg);
 }
-.Vigo:hover h1{
+
+.Vigo:hover h1 {
   visibility: visible;
 }
-.Coruna{
+
+.Coruna {
   background-image: url(../fotos/fotos-index/coruna.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
   height: 200px;
   width: 320px;
-  margin:4px;
+  margin: 4px;
 }
-.Coruna h1{
+
+.Coruna h1 {
   visibility: hidden;
 }
-.Coruna:hover{
-  background-image: 
-  linear-gradient(
-    rgba(41, 48, 43, 0.6),
-    rgba(41, 48, 43, 0.6)
-  ),
-  url(../fotos/fotos-index/coruna.jpg);
+
+.Coruna:hover {
+  background-image:
+    linear-gradient(rgba(41, 48, 43, 0.6),
+      rgba(41, 48, 43, 0.6)),
+    url(../fotos/fotos-index/coruna.jpg);
 }
-.Coruna:hover h1{
+
+.Coruna:hover h1 {
   visibility: visible;
 }
-.Baiona{
+
+.Baiona {
   background-image: url(../fotos/fotos-index/baiona.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
   height: 200px;
   width: 320px;
-  margin:4px;
+  margin: 4px;
 }
-.Baiona h1{
+
+.Baiona h1 {
   visibility: hidden;
 }
-.Baiona:hover{
-  background-image: 
-  linear-gradient(
-    rgba(41, 48, 43, 0.6),
-    rgba(41, 48, 43, 0.6)
-  ),
-  url(../fotos/fotos-index/baiona.jpg);
+
+.Baiona:hover {
+  background-image:
+    linear-gradient(rgba(41, 48, 43, 0.6),
+      rgba(41, 48, 43, 0.6)),
+    url(../fotos/fotos-index/baiona.jpg);
 }
-.Baiona:hover h1{
+
+.Baiona:hover h1 {
   visibility: visible;
 }
-.Sanxenxo{
+
+.Sanxenxo {
   background-image: url(../fotos/fotos-index/sanxenxo.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
   height: 200px;
   width: 320px;
-  margin:4px;
+  margin: 4px;
 }
-.Sanxenxo h1{
+
+.Sanxenxo h1 {
   visibility: hidden;
 }
-.Sanxenxo:hover{
-  background-image: 
-  linear-gradient(
-    rgba(41, 48, 43, 0.6),
-    rgba(41, 48, 43, 0.6)
-  ),
-  url(../fotos/fotos-index/sanxenxo.jpg);
+
+.Sanxenxo:hover {
+  background-image:
+    linear-gradient(rgba(41, 48, 43, 0.6),
+      rgba(41, 48, 43, 0.6)),
+    url(../fotos/fotos-index/sanxenxo.jpg);
 }
-.Sanxenxo:hover h1{
+
+.Sanxenxo:hover h1 {
   visibility: visible;
 }
-.Ribadeo{
+
+.Ribadeo {
   background-image: url(../fotos/fotos-index/ribadeo.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
   height: 200px;
   width: 320px;
-  margin:4px;
+  margin: 4px;
 }
-.Ribadeo h1{
+
+.Ribadeo h1 {
   visibility: hidden;
 }
-.Ribadeo:hover{
-  background-image: 
-  linear-gradient(
-    rgba(41, 48, 43, 0.6),
-    rgba(41, 48, 43, 0.6)
-  ),
-  url(../fotos/fotos-index/ribadeo.jpg);
+
+.Ribadeo:hover {
+  background-image:
+    linear-gradient(rgba(41, 48, 43, 0.6),
+      rgba(41, 48, 43, 0.6)),
+    url(../fotos/fotos-index/ribadeo.jpg);
 }
-.Ribadeo:hover h1{
+
+.Ribadeo:hover h1 {
   visibility: visible;
 }
-.Cambados{
+
+.Cambados {
   background-image: url(../fotos/fotos-index/cambados.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
   height: 200px;
   width: 320px;
-  margin:4px;
+  margin: 4px;
 }
-.Cambados h1{
+
+.Cambados h1 {
   visibility: hidden;
 }
-.Cambados:hover{
-  background-image: 
-  linear-gradient(
-    rgba(41, 48, 43, 0.6),
-    rgba(41, 48, 43, 0.6)
-  ),
-  url(../fotos/fotos-index/cambados.jpg);
+
+.Cambados:hover {
+  background-image:
+    linear-gradient(rgba(41, 48, 43, 0.6),
+      rgba(41, 48, 43, 0.6)),
+    url(../fotos/fotos-index/cambados.jpg);
 }
-.Cambados:hover h1{
+
+.Cambados:hover h1 {
   visibility: visible;
 }
-.localizaciones{
+
+.localizaciones {
   margin: 20px auto;
   max-width: 1000px;
-  display:flex;
+  display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.texto-vigo,.texto-coruna,.texto-baiona,.texto-sanxenxo,.texto-ribadeo,.texto-cambados{
-text-align:center;
-margin: 80px 0;
-}
-.stats{
+
+.texto-vigo,
+.texto-coruna,
+.texto-baiona,
+.texto-sanxenxo,
+.texto-ribadeo,
+.texto-cambados {
   text-align: center;
-  background-image: 
-  linear-gradient(
-    rgba(15, 117, 188, 0.6),
-    rgba(15, 117, 188, 0.6)
-  ),
-  url(../fotos/fotos-index/foto-stats.jpg);
+  margin: 80px 0;
+}
+
+.stats {
+  text-align: center;
+  background-image:
+    linear-gradient(rgba(15, 117, 188, 0.6),
+      rgba(15, 117, 188, 0.6)),
+    url(../fotos/fotos-index/foto-stats.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
-.col1,.col2,.col3,.col4{
+
+.col1,
+.col2,
+.col3,
+.col4 {
   text-align: center;
   margin: 60px;
 }
-.h1-col1,.h1-col2,.h1-col3,.h1-col4{
+
+.h1-col1,
+.h1-col2,
+.h1-col3,
+.h1-col4 {
   font-size: 3em;
 }
-.menu li a:hover{
+
+.menu li a:hover {
   color: white;
 }
-.menu .activa a{
+
+.menu .activa a {
   color: #0f75bc;
 }
-.menu .activa-m a{
+
+.menu .activa-m a {
   color: #25AAE1;
 }
-.centrar-stats{
+
+.centrar-stats {
   margin: 0 auto;
   max-width: 1000px;
-  display:flex;
+  display: flex;
   justify-content: space-between;
 }
-.banner-contacto{
-   background-color: #0f75bc;
-   height: 130px;
+
+.banner-contacto {
+  background-color: #0f75bc;
+  height: 130px;
 }
-.contenido-banner-contacto{
+
+.contenido-banner-contacto {
   max-width: 1000px;
   height: 130px;
   margin: 0 auto;
-  display: flex; 
+  display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.opiniones{
+
+.opiniones {
   margin: 20px auto;
   max-width: 1000px
 }
-.opinion{
+
+.opinion {
   background-color: #F8F9FA;
   width: 320px;
   height: 340px;
   display: inline-block;
   margin: 4px;
 }
-.opinion img{
+
+.opinion img {
   display: block;
   margin: auto;
   padding-top: 50px;
   padding-bottom: 30px;
 }
-.opinion p{
+
+.opinion p {
   margin-left: 30px;
   margin-right: 30px;
   color: black;
   text-align: justify;
 }
-.opinion h4{
+
+.opinion h4 {
   text-align: center;
   color: #0f75bc;
 }
-.llamamos{
+
+.llamamos {
   text-align: center;
-  background-image: 
-  linear-gradient(
-    rgba(15, 117, 188, 0.6),
-    rgba(15, 117, 188, 0.6)
-  ),
-  url(../fotos/fotos-index/te-llamamos.jpg);
+  background-image:
+    linear-gradient(rgba(15, 117, 188, 0.6),
+      rgba(15, 117, 188, 0.6)),
+    url(../fotos/fotos-index/te-llamamos.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 300px;
 }
-.llamamos h2{
-  color:white;
-  text-align:center;
+
+.llamamos h2 {
+  color: white;
+  text-align: center;
   font-size: 2.75em;
   padding-top: 40px;
   margin-bottom: 10px;
 }
-.llamamos p{
+
+.llamamos p {
   margin-bottom: 30px;
 }
-.telefono{
+
+.telefono {
   border-radius: 6px;
   border: 2px solid white;
   height: 43px;
   width: 220px;
 }
-.llamamos ::placeholder{
+
+.llamamos ::placeholder {
   color: grey;
   font-size: 1.5em;
   text-align: center;
 }
-.contacto-index{
+
+.contacto-index {
   margin: 20px auto;
   max-width: 1000px;
 }
-.contacto-index h2{
-  color:black;
-  text-align:center;
+
+.contacto-index h2 {
+  color: black;
+  text-align: center;
   font-size: 45px;
   padding-top: 30px;
   margin-bottom: 10px;
   margin-top: 0;
 }
-.contacto-index p{
+
+.contacto-index p {
   margin-bottom: 30px;
   color: black;
   text-align: center;
 }
-.contacto-index .nombre,.contacto-index .email,.contacto-index textarea{
+
+.contacto-index .nombre,
+.contacto-index .email,
+.contacto-index textarea {
   width: 100%;
   border: 2px solid #0f75bc;
   height: 41px;
   background-color: #F8F9FA;
 }
-.contacto-index textarea{
+
+.contacto-index textarea {
   height: 8em;
   font-family: Arial;
 }
-.contacto-index ::placeholder{
+
+.contacto-index ::placeholder {
   color: grey;
   font-size: 1.2em;
   padding-left: 5px;
 }
-footer{
+
+footer {
   background-color: #262424;
   margin-bottom: 0;
 }
-.footer-1000px{
+
+.footer-1000px {
   margin: 0 auto;
   max-width: 1250px;
   padding-top: 50px;
-  display:flex;
+  display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-footer h2{
+
+footer h2 {
   color: #0f75bc;
 }
-.lista-enlaces{
+
+.lista-enlaces {
   text-decoration: none;
-  list-style:none;
+  list-style: none;
   padding-left: 0;
   line-height: 63px;
 }
-.ubicacion{
+
+.ubicacion {
   line-height: normal;
 }
-.lista-enlaces a{
+
+.lista-enlaces a {
   color: white;
   text-decoration: none;
 }
-.logo-mapa a,iframe{
+
+.logo-mapa a,
+iframe {
   display: block;
   text-align: center;
   margin-bottom: 30px;
 }
+
 .div-cookies {
   /*position: fixed;
   bottom: 0px;
@@ -421,7 +507,8 @@ footer h2{
   transition: background .6s;
   color: white;
 }
-.contenido-cookies{
+
+.contenido-cookies {
   background: rgba(45, 44, 44, 0.7);
   border-radius: 2px;
   box-shadow: 0 1px 3px rgba(33, 41, 52, .75);
@@ -438,56 +525,86 @@ footer h2{
   font-size: 1.3rem;
   text-align: justify;
 }
-.contenido-cookies a{
+
+.contenido-cookies a {
   display: inline-block;
   color: #0080DE;
 }
-.contenido-cookies a:hover{
+
+.contenido-cookies a:hover {
   color: #ffffff;
 }
-.div-cookies #boton-cookies{
+
+.div-cookies #boton-cookies {
   margin: 0 auto;
   max-width: 60%;
 }
-.div-cookies a{
+
+.div-cookies a {
   margin: 0 auto;
   max-width: 60%;
 }
-.tlfn-oculto{
+
+.tlfn-oculto {
   margin: 0;
 }
-#menu-movil:checked ~ .menu{
+
+#menu-movil:checked~.menu {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100vh;
-  background-color: rgba(51,51,51,0.8);
+  background-color: rgba(51, 51, 51, 0.8);
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   justify-content: space-around;
 }
-.barras-movil{
+
+.barras-movil {
   display: none;
 }
-.banner-logeo{
+
+.banner-logeo {
   background-color: #262424;
-  text-align: right;
+  text-align: center;
 }
-.banner-logeo a{
+
+.banner-logeo a {
   color: white;
   padding-right: 10px;
   text-decoration: none;
 }
-.nombre:disabled,.email:disabled, .apellidos:disabled,.tlfn:disabled,.email:disabled,.telefonoo:disabled, .dni:disabled, .direccion:disabled, .trabajo:disabled, .ingresos:disabled {
+
+.nombre:disabled,
+.email:disabled,
+.apellidos:disabled,
+.tlfn:disabled,
+.email:disabled,
+.telefonoo:disabled,
+.dni:disabled,
+.direccion:disabled,
+.trabajo:disabled,
+.ingresos:disabled {
   border: 2px solid grey;
 }
-.nombre:read-only,.email:read-only, .apellidos:read-only,.tlfn:read-only,.email:read-only,.telefonoo:read-only, .dni:read-only, .direccion:read-only, .trabajo:read-only, .ingresos:read-only {
+
+.nombre:read-only,
+.email:read-only,
+.apellidos:read-only,
+.tlfn:read-only,
+.email:read-only,
+.telefonoo:read-only,
+.dni:read-only,
+.direccion:read-only,
+.trabajo:read-only,
+.ingresos:read-only {
   border: 2px solid grey;
 }
-.bienvenida{
+
+.bienvenida {
   color: #25aae1;
   display: inline;
 }

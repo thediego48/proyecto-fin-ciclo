@@ -26,7 +26,7 @@
   if (isset($_SESSION['validado']) && $_SESSION['validado'] == true) {
   ?>
     <div class="banner-logeo">
-      <p class="bienvenida">Bienvenido, <?php echo $nombreIndex['nombre'] ?> </p><a href="datos-cuenta.php">Mi cuenta</a> <a href="login.php?logout=1">Logout </a>
+      <p class="bienvenida">Bienvenido, <?php echo $nombreIndex['nombre'] ?> </p>
     </div>
     <header>
       <img src="fotos/fotos-index/yate1.jpg" alt="banner" class="banner" />
@@ -53,6 +53,14 @@
         <li><a href="servicios.php">Servicios</a></li>
         <li><a href="barcos.php">Barcos</a></li>
         <li><a href="contacto.php">Contacto</a></li>
+        <div class="menu-hover" style="display: inline;">
+        <li><a href="#" class="menu-hover"><i class="fas fa-regular fa-user"></i></a>
+        <ul class="submenu-escr">
+          <li><a href="datos-cuenta.php">Mi cuenta</a></li><br>
+          <li><a href="login.php?logout=1"><i class="fas fa-solid fa-power-off"></i></a></li>
+        </ul>
+        </li>
+        </div>
       </ul>
       <!--<div class="rrss">
             <a href="https://instagram.com"><i class="fab fa-instagram fa-lg"></i></a>
@@ -155,7 +163,7 @@
         <p>
           <input type="checkbox" name="condiciones" required /><label for="condiciones">He leído y acepto la <a href="privacidad.html">política de privacidad</a></label>
         </p>
-        <p><input type="submit" class="button" value="Enviar" onClick="alert('Mensaje enviado, te contactaremos lo antes posible')"/></p>
+        <p><input type="submit" class="button" value="Enviar" onClick="alert('Mensaje enviado, te contactaremos lo antes posible')" /></p>
       </form>
     </section>
     <footer>

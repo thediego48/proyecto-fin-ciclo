@@ -54,12 +54,12 @@
         <li><a href="barcos.php">Barcos</a></li>
         <li><a href="contacto.php">Contacto</a></li>
         <div class="menu-hover" style="display: inline;">
-        <li><a href="#" class="menu-hover"><i class="fas fa-regular fa-user"></i></a>
-        <ul class="submenu-escr">
-          <li><a href="datos-cuenta.php">Mi cuenta</a></li><br>
-          <li><a href="login.php?logout=1"><i class="fas fa-solid fa-power-off"></i></a></li>
-        </ul>
-        </li>
+          <li><a href="#" class="menu-hover"><i class="fas fa-regular fa-user"></i></a>
+            <ul class="submenu-escr">
+              <li><a href="datos-cuenta.php">Mi cuenta</a></li>
+              <li><a href="login.php?logout=1"><i class="fas fa-solid fa-power-off"></i></a></li>
+            </ul>
+          </li>
         </div>
       </ul>
       <!--<div class="rrss">
@@ -214,7 +214,7 @@
         <br><button type="button" class="button" id="boton-cookies" onclick="acceptCookies()">
           Acepto el uso de cookies
         </button>
-        
+
       </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

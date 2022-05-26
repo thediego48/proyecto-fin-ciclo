@@ -5,9 +5,9 @@
     <title>Datos de cuenta | Real Yatch Rental</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link href="css/css-principal.css" rel="stylesheet" type="text/css" media="screen" />
     <link href="css/css-paginas-info.css" rel="stylesheet" type="text/css" media="screen" />
     <link href="css/css-cuenta.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="css/css-principal.css" rel="stylesheet" type="text/css" media="screen" />
     <link href="css/css-mediaQueries.css" rel="stylesheet" type="text/css" media="screen" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="fotos/fotos-global/logo.png" sizes="64x64">
@@ -98,7 +98,7 @@
                 <div class="menu-hover" style="display: inline;">
                     <li><a href="#" class="menu-hover"><i class="fas fa-regular fa-user"></i></a>
                         <ul class="submenu-escr">
-                            <li><a href="datos-cuenta.php">Mi cuenta</a></li><br>
+                            <li><a href="datos-cuenta.php">Mi cuenta</a></li>
                             <li><a href="login.php?logout=1"><i class="fas fa-solid fa-power-off"></i></a></li>
                         </ul>
                     </li>

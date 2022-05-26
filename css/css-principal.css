@@ -38,11 +38,14 @@ body {
   top: 30px;
   right: 0px;
   display: none;
+  border-radius: 5px;
 }
 
 .submenu-escr li a{
   color: white;
   padding: 0;
+  display: block;
+  margin: 10px;
 }
 
 .menu-hover:hover .submenu-escr{
@@ -306,6 +309,10 @@ label{
 
 .menu li a:hover {
   color: white;
+}
+
+.submenu-escr li a:hover{
+  color: #0F75BC;
 }
 
 .menu .activa a {

@@ -20,6 +20,7 @@
 - reseñas con php
 - QUITAR EMAILS DEL HOSTING EL ULTIMO DIA
 - al modificar datos, que revise que el email no se repite, ahora no funciona
-- Modo móvil 
-- Mejorar menú desplegable
+- :heavy_check_mark:Modo móvil 
+- :heavy_check_mark:Mejorar menú desplegable
 - Correos electrónicos para cambio de datos, cambio de contraseña y eliminacion de cuenta
+- responsive pagina cookies

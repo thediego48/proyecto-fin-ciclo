@@ -65,7 +65,7 @@ label {
     font-size: 1.275em;
     text-decoration: none;
     color: black;
-    padding: 20px;
+    margin: 20px;
 }
 
 .menu-datos li a:hover {

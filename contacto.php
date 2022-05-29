@@ -38,11 +38,8 @@
           <li><a href="servicios.php">Servicios</a></li>
           <li><a href="barcos.php">Barcos</a></li>
           <li class="activa-m"><a href="contacto.php">Contacto</a></li>
-          <li class="redes"><a href="https://instagram.com"><i class="fab fa-instagram fa-lg"></i></a>
-            <a href="https://api.whatsapp.com/send?phone=34986655232&text="><i class="fab fa-whatsapp fa-lg"></i></a>
-            <a href="https://github.com/thediego48/proyecto-fin-ciclo"><i class="fab fa-github fa-lg"></i></a>
-          </li>
-          <label for="menu-movil" class="menu-movil"><span>CERRAR</span></label>
+          <li><a href="datos-cuenta.php">Mi cuenta</a></li>
+          <label><a href="carga-inv.html" style="text-decoration: none; color: red;"><span>CERRAR SESIÓN</span></a></label>
         </ul>
       </div>
       <ul class="menu">

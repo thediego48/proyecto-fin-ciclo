@@ -34,18 +34,15 @@
             <a href="index.php"><img src="fotos/fotos-global/logo.png" width="150px" height="100px" class="logo" /></a>
             <div class="barras-movil">
                 <input type="checkbox" id="menu-movil">
-                <label for="menu-movil" class="menu-movil"><span class="fas fa-bars fa-2x"></span></label>
+                <label for="menu-movil" class="menu-movil" style="color: white;"><span class="fas fa-bars fa-2x"></span></label>
                 <ul class="menu">
                     <li><a href="index.php">Inicio</a></li>
                     <li><a href="nosotros.php">Sobre nosotros</a></li>
                     <li><a href="servicios.php">Servicios</a></li>
                     <li><a href="barcos.php">Barcos</a></li>
                     <li><a href="contacto.php">Contacto</a></li>
-                    <li class="redes"><a href="https://instagram.com"><i class="fab fa-instagram fa-lg"></i></a>
-                        <a href="https://api.whatsapp.com/send?phone=34986655232&text="><i class="fab fa-whatsapp fa-lg"></i></a>
-                        <a href="https://github.com/thediego48/proyecto-fin-ciclo"><i class="fab fa-github fa-lg"></i></a>
-                    </li>
-                    <label for="menu-movil" class="menu-movil"><span>CERRAR</span></label>
+                    <li class="activa-m"><a href="datos-cuenta.php">Mi cuenta</a></li>
+                    <label><a href="carga-inv.html" style="text-decoration: none; color: red;"><span>CERRAR SESIÓN</span></a></label>
                 </ul>
             </div>
             <ul class="menu-info">
@@ -85,7 +82,7 @@
                 <p>Esta acción no puede deshacerse y para volver en un futuro tendrías que volver a pasar el proceso de selección para volver a trabajar con nosotros. No queremos que te vayas y por eso te ofrecemos un descuento de un 10% en tu próximo alquiler si nos llamas ahora mismo a nuestro teléfono. (+34 986 65 52 32).</p>
                 <p>Si de verdad quieres eliminar tu cuenta nos gustaría darte las gracias por formar parte del equipo RealYatchRental, gracias a ti lo hemos pasado muy bien.</p>
                 <p>Bueno... Dicho todo esto... ¿Estás seguro que quieres irte? Porque te echaríamos tanto de menos...</p>
-                <p>
+                <p class="botones-elim-cuenta">
                     <a href="baja.php" onclick="alert('Te has dado de baja satisfactoriamente')">Sí, dame de baja</a>
                     <a class="button" href="index.php">¡No, me quedo!</a>
                 </p>

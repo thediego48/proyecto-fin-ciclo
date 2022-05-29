@@ -52,7 +52,7 @@
             <p>La nueva plataforma completamente privada que te permite alquilar el barco perfecto para tus vacaciones, negocio, fiesta...</p>
             </div>
             <div id="acceso">
-                <form action="login.php" method="post">
+                <form action="login.php" method="post" class="logeo">
                     <input type="text" name="email" class="nombre" placeholder="Correo electrónico" /><br>
                     <input type="password" name="contrasena" class="clave"placeholder="Contraseña" /><br>
                     <input type="submit" name="submit"class="button" value="Entrar" />  

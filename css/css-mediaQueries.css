@@ -231,6 +231,7 @@
     }
 
     .nombre,
+    .apellidos,
     .email,
     .apellidos,
     .telefonoo,
@@ -238,8 +239,13 @@
     .direccion,
     .trabajo,
     .ingresos,
+    .mensaje,
     .pass{
         width: 97%;
+    }
+
+    .mensaje{
+        max-width: 97%;
     }
 
     .botones-elim-cuenta a{
@@ -249,9 +255,25 @@
 
     .forma-login{
         flex-direction: column;
+        justify-content: center;
     }
 
     .info{
         max-width: 100%;
+    }
+
+    .logeo {
+        width: 100%;
+    }
+
+    .info {
+        max-width: 99%;
+    }
+    .footer-login{
+        position: relative;
+        padding-top: 10px;
+    }
+    #bot-reg{
+        margin-bottom: 20px;
     }
 }

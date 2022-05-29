@@ -8,29 +8,44 @@
 		body {
 			margin: 0;
 			padding: 0;
-			
+
 		}
 
-		h2 {
+		.loader-h2 {
 			text-align: center;
 			color: #25aae1;
 			font-family: Arial, Helvetica, sans-serif;
 		}
 
 		.loader {
-			margin: 100px auto;
-			display:block;
+			display: block;
 			opacity: .8;
-			width: 400px;
-			height: 300px;
+			width: 800px;
+			height: 600px;
+		}
+		div{
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			margin: auto;
+		}
+		div .loader{
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			margin: auto;
 		}
 	</style>
+	<link href="css/css-mediaQueries.css" rel="stylesheet" type="text/css" media="screen" />
 </head>
 
 <body>
-	<img class="loader" src="fotos/fotos-index/loading.gif" alt="">
-	<h2>Gracias por tu visita,<br>
-		¡Vuelve pronto!</h2>
+	<div><img class="loader" src="fotos/fotos-index/loading-out.gif" alt="">
+	
 
 	<script>
 		function redireccionarPagina() {

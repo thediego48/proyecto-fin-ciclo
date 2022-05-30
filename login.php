@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Login | Real Yatch Rental</title>
+    <title>Login | Real Yacht Rental</title>
     <link href="css/css-principal.css" rel="stylesheet" type="text/css" media="screen" />
     <link href="css/css-login.css" rel="stylesheet" type="text/css" media="screen" />
     <link href="css/css-mediaQueries.css" rel="stylesheet" type="text/css" media="screen" />
@@ -48,7 +48,7 @@
         <div class="forma-login">
             <div class="info">
             <a href="index.php"><img src="fotos/fotos-global/logo1.png" width="140px" height="60px"/></a>
-            <h2>Real. Yatch. Rental.</h2>
+            <h2>Real. Yacht. Rental.</h2>
             <p>La nueva plataforma completamente privada que te permite alquilar el barco perfecto para tus vacaciones, negocio, fiesta...</p>
             </div>
             <div id="acceso">
@@ -72,14 +72,14 @@
             <p><a href="./aviso-legal.html">Aviso legal</a> |
             <a href="./privacidad.html">Política de privacidad</a> |
             <a href="./cookies.html">Política de cookies</a></p>
-            <p>RealYatchRental© 2022</p>
+            <p>RealYachtRental© 2022</p>
         </div>
     <?php
     }
     ?>
     <div class="div-cookies" style="display: none;">
         <div class="contenido-cookies">
-            <h2>¡Bienvenido a Real Yatch Rental!</h2>
+            <h2>¡Bienvenido a Real Yacht Rental!</h2>
 
             <p>Esta web inserta cookies propias para facilitar tu navegación y de terceros derivadas de su uso en nuestra web, de
                 medios sociales, así como para mejorar la usabilidad y temática de la misma con Google Analytics. Los datos

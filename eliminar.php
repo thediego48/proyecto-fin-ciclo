@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Eliminar cuenta | Real Yatch Rental</title>
+    <title>Eliminar cuenta | Real Yacht Rental</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link href="css/css-paginas-info.css" rel="stylesheet" type="text/css" media="screen" />
@@ -80,7 +80,7 @@
 
                 <h4>¿Estás seguro de que deseas eliminar tu cuenta?</h4>
                 <p>Esta acción no puede deshacerse y para volver en un futuro tendrías que volver a pasar el proceso de selección para volver a trabajar con nosotros. No queremos que te vayas y por eso te ofrecemos un descuento de un 10% en tu próximo alquiler si nos llamas ahora mismo a nuestro teléfono. (+34 986 65 52 32).</p>
-                <p>Si de verdad quieres eliminar tu cuenta nos gustaría darte las gracias por formar parte del equipo RealYatchRental, gracias a ti lo hemos pasado muy bien.</p>
+                <p>Si de verdad quieres eliminar tu cuenta nos gustaría darte las gracias por formar parte del equipo RealYachtRental, gracias a ti lo hemos pasado muy bien.</p>
                 <p>Bueno... Dicho todo esto... ¿Estás seguro que quieres irte? Porque te echaríamos tanto de menos...</p>
                 <p class="botones-elim-cuenta">
                     <a href="baja.php" onclick="alert('Te has dado de baja satisfactoriamente')">Sí, dame de baja</a>
@@ -118,7 +118,7 @@
                     <ul class="lista-enlaces">
                         <li class="ubicacion">As Avenidas s/n,<br>Edif. Escuela de Vela, <br>36202 Vigo, Pontevedra</li>
                         <li>+34 986 65 52 32</li>
-                        <li>contacto@realyatchrental.com</li>
+                        <li>contacto@realyachtrental.com</li>
                         <a href="https://instagram.com"><i class="fab fa-instagram fa-2x"></i></a>
                         <a href="https://api.whatsapp.com/send?phone=34986655232&text="><i class="fab fa-whatsapp fa-2x"></i></a>
                         <a href="https://github.com/thediego48/proyecto-fin-ciclo"><i class="fab fa-github fa-2x"></i></a>
@@ -128,7 +128,7 @@
         </footer>
         <div class="div-cookies" style="display: none;">
             <div class="contenido-cookies">
-                <h2>¡Bienvenido a Real Yatch Rental!</h2>
+                <h2>¡Bienvenido a Real Yacht Rental!</h2>
 
                 <p>Esta web inserta cookies propias para facilitar tu navegación y de terceros derivadas de su uso en nuestra web, de
                     medios sociales, así como para mejorar la usabilidad y temática de la misma con Google Analytics. Los datos

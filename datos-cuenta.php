@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Datos de cuenta | Real Yacht Rental</title>
+    <title>Datos de cuenta | Real Yatch Rental</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link href="css/css-paginas-info.css" rel="stylesheet" type="text/css" media="screen" />
@@ -180,7 +180,7 @@
                     <ul class="lista-enlaces">
                         <li class="ubicacion">As Avenidas s/n,<br>Edif. Escuela de Vela, <br>36202 Vigo, Pontevedra</li>
                         <li>+34 986 65 52 32</li>
-                        <li>contacto@realyachtrental.com</li>
+                        <li>contacto@realyatchrental.com</li>
                         <a href="https://instagram.com"><i class="fab fa-instagram fa-2x"></i></a>
                         <a href="https://api.whatsapp.com/send?phone=34986655232&text="><i class="fab fa-whatsapp fa-2x"></i></a>
                         <a href="https://github.com/thediego48/proyecto-fin-ciclo"><i class="fab fa-github fa-2x"></i></a>
@@ -190,7 +190,7 @@
         </footer>
         <div class="div-cookies" style="display: none;">
             <div class="contenido-cookies">
-                <h2>¡Bienvenido a Real Yacht Rental!</h2>
+                <h2>¡Bienvenido a Real Yatch Rental!</h2>
 
                 <p>Esta web inserta cookies propias para facilitar tu navegación y de terceros derivadas de su uso en nuestra web, de
                     medios sociales, así como para mejorar la usabilidad y temática de la misma con Google Analytics. Los datos

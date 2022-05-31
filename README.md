@@ -24,4 +24,4 @@
 - :heavy_check_mark:Mejorar menú desplegable
 - Correos electrónicos para cambio de datos, cambio de contraseña y eliminacion de cuenta
 - responsive pagina cookies
-- :heavy_check_mark:Cambiar yacht por yacht
+- :heavy_check_mark:Cambiar yatch por yatch

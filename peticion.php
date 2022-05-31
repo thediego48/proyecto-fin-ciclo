@@ -50,7 +50,7 @@ if (isset($_POST["submit"])) {
 <html>
 
 <head>
-  <title>Petición de registro | Real Yacht Rental</title>
+  <title>Petición de registro | Real Yatch Rental</title>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width" />
   <link href="css/css-principal.css" rel="stylesheet" type="text/css" media="screen" />
@@ -97,7 +97,7 @@ if (isset($_POST["submit"])) {
   </header>
   </div>
   <div class="texto-registro">
-    <h1>Petición de registro en RealYachtRental</h1>
+    <h1>Petición de registro en RealYatchRental</h1>
 
     <form action="#" method="post" class="form-registro" id="formm">
       <div class="form-doble">
@@ -121,8 +121,8 @@ if (isset($_POST["submit"])) {
         <input type="text" class="trabajo" name="trabajo" placeholder="Puesto de trabajo actual" value="<?php echo $trabajo; ?>" />
         <input type="number" class="ingresos" name="ingresos" placeholder="Ingresos estimados anuales." value="<?php echo $ingresos; ?>" />
       </div>
-      <p><textarea class="mensaje" name="quieres" placeholder="¿Por qué quieres pertecener al grupo RealYachtRental?" value="<?php echo $_POST['quieres']; ?>"></textarea></p>
-      <p><textarea class="mensaje" name="puedes" placeholder="¿Por qué crees que puedes pertecener al grupo RealYachtRental?" value="<?php echo $_POST['puedes']; ?>"></textarea></p>
+      <p><textarea class="mensaje" name="quieres" placeholder="¿Por qué quieres pertecener al grupo RealYatchRental?" value="<?php echo $_POST['quieres']; ?>"></textarea></p>
+      <p><textarea class="mensaje" name="puedes" placeholder="¿Por qué crees que puedes pertecener al grupo RealYatchRental?" value="<?php echo $_POST['puedes']; ?>"></textarea></p>
       <p>
         <input type="checkbox" name="condiciones" required /><label for="condiciones">He leído y acepto la <a href="privacidad.html">política de privacidad</a>*</label>
       </p>
@@ -158,7 +158,7 @@ if (isset($_POST["submit"])) {
         <ul class="lista-enlaces">
           <li class="ubicacion">As Avenidas s/n,<br>Edif. Escuela de Vela, <br>36202 Vigo, Pontevedra</li>
           <li>+34 986 65 52 32</li>
-          <li>contacto@realyachtrental.com</li>
+          <li>contacto@realyatchrental.com</li>
           <a href="https://instagram.com"><i class="fab fa-instagram fa-2x"></i></a>
           <a href="https://api.whatsapp.com/send?phone=34986655232&text="><i class="fab fa-whatsapp fa-2x"></i></a>
           <a href="https://github.com/thediego48/proyecto-fin-ciclo"><i class="fab fa-github fa-2x"></i></a>
@@ -168,7 +168,7 @@ if (isset($_POST["submit"])) {
   </footer>
   <div class="div-cookies" style="display: none;">
     <div class="contenido-cookies">
-      <h2>¡Bienvenido a Real Yacht Rental!</h2>
+      <h2>¡Bienvenido a Real Yatch Rental!</h2>
 
       <p>Esta web inserta cookies propias para facilitar tu navegación y de terceros derivadas de su uso en nuestra web,
         de
@@ -231,24 +231,24 @@ if (isset($_POST["submit"])) {
     $mail1->Port       = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
     //Recipients
-    $mail->setFrom('realyatchrental@gmail.com', 'Real Yacht Rental');
+    $mail->setFrom('realyatchrental@gmail.com', 'Real Yatch Rental');
     $mail->addAddress($_POST["email"]);     //Add a recipient
 
-    $mail1->setFrom('realyatchrental@gmail.com', 'Real Yacht Rental');
+    $mail1->setFrom('realyatchrental@gmail.com', 'Real Yatch Rental');
     $mail1->addAddress('realyatchrental@gmail.com');     //Add a recipient
 
     //Content
     $mail->isHTML(true);                                  //Set email format to HTML
-    $mail->Subject = '¡Has sido aceptado en RealYachtRental!';
-    $mail->Body    = "Enhorabuena! Despues de estudiar tu caso, nos complace informarte de que has sido aceptado en RealYachtRental... ¡Qué ganas de que reserves tu primer barco!<br>
+    $mail->Subject = '¡Has sido aceptado en RealYatchRental!';
+    $mail->Body    = "Enhorabuena! Despues de estudiar tu caso, nos complace informarte de que has sido aceptado en RealYatchRental... ¡Qué ganas de que reserves tu primer barco!<br>
     Para iniciar sesión necesitaras tus datos de acceso facilitados en el formulario de registro, por si no los recuerdas son:<br>"
       . "<br><b>Correo electrónico: </b>" . $_POST["email"] . "<br><b>Contraseña: </b>" . $_POST["contrasena"] .
       "<br><br>Un saludo, <br>
-    El equipo de RealYachtRental.";
+    El equipo de RealYatchRental.";
 
     $mail1->isHTML(true);                                  //Set email format to HTML
     $mail1->Subject = 'Nueva solicitud de registro';
-    $mail1->Body    = "Un nuevo usuario ha solicitado registrarse en RealYachtRental, los datos de este usuario son:" .
+    $mail1->Body    = "Un nuevo usuario ha solicitado registrarse en RealYatchRental, los datos de este usuario son:" .
       "<br><b>Nombre:</b> " . $_POST["nombre"] .
       "<br><b>Apellidos:</b> " . $_POST["apellidos"] .
       "<br><b>Email:</b> " . $_POST["email"] .
@@ -257,8 +257,8 @@ if (isset($_POST["submit"])) {
       "<br><b>Dirección:</b> " . $_POST["direccion"] .
       "<br><b>Puesto de trabajo:</b> " . $_POST["trabajo"] .
       "<br><b>Ingresos anuales:</b> " . $_POST["ingresos"] .
-      "<br><b>¿Por qué quieres pertecener al grupo RealYachtRental?:</b> " . $_POST["quieres"] .
-      "<br><b>¿Por qué crees que puedes pertecener al grupo RealYachtRental?</b> " . $_POST["puedes"];
+      "<br><b>¿Por qué quieres pertecener al grupo RealYatchRental?:</b> " . $_POST["quieres"] .
+      "<br><b>¿Por qué crees que puedes pertecener al grupo RealYatchRental?</b> " . $_POST["puedes"];
 
     $mail->CharSet = 'UTF-8';
     $mail->send();

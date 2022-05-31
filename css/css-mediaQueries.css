@@ -276,4 +276,8 @@
     #bot-reg{
         margin-bottom: 20px;
     }
+    .contenido-cookies{
+        min-width: 0;
+        padding: 1rem;
+    }
 }
